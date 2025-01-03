@@ -10,7 +10,7 @@
     <body>
         <script src="liberateur.js"></script>
         <header>
-            <img src="images/logo.png" alt="Logo La Croix Bleue" class="logo">
+            <img src="../images/logo.png" alt="Logo La Croix Bleue" class="logo">
             <nav class="menu">
                 <button class="menu-bouton">Accueil</button>
                 <button class="menu-bouton">Actualités</button>
@@ -48,7 +48,7 @@
         <!-- Conteneur global pour tous les fichiers -->
         <div class="conteneur-fichiers">
             <div class="fichiers">
-                <img src="images/pdf.png">
+                <img src="../images/pdf.png">
                 <div class="contenu-droite">
                     <h3>Titre 1</h3>
                     <div class="boutons">
@@ -59,7 +59,7 @@
             </div>
 
             <div class="fichiers">
-                <img src="images/pdf.png">
+                <img src="../images/pdf.png">
                 <div class="contenu-droite">
                     <h3>Titre 2</h3>
                     <div class="boutons">
@@ -70,7 +70,7 @@
             </div>
 
             <div class="fichiers">
-                <img src="images/pdf.png">
+                <img src="../images/pdf.png">
                 <div class="contenu-droite">
                     <h3>Titre 3</h3>
                     <div class="boutons">
@@ -81,7 +81,7 @@
             </div>
 
             <div class="fichiers">
-                <img src="images/pdf.png">
+                <img src="../images/pdf.png">
                 <div class="contenu-droite">
                     <h3>Titre 4</h3>
                     <div class="boutons">
@@ -92,7 +92,7 @@
             </div>
 
             <div class="fichiers">
-                <img src="images/pdf.png">
+                <img src="../images/pdf.png">
                 <div class="contenu-droite">
                     <h3>Titre 5</h3>
                     <div class="boutons">
@@ -103,7 +103,7 @@
             </div>
 
             <div class="fichiers">
-                <img src="images/pdf.png">
+                <img src="../images/pdf.png">
                 <div class="contenu-droite">
                     <h3>Titre 6</h3>
                     <div class="boutons">
@@ -114,7 +114,7 @@
             </div>
 
             <div class="fichiers">
-                <img src="images/pdf.png">
+                <img src="../images/pdf.png">
                 <div class="contenu-droite">
                     <h3>Titre 7</h3>
                     <div class="boutons">
@@ -125,7 +125,7 @@
             </div>
 
             <div class="fichiers">
-                <img src="images/pdf.png">
+                <img src="../images/pdf.png">
                 <div class="contenu-droite">
                     <h3>Titre 8</h3>
                     <div class="boutons">
@@ -136,7 +136,7 @@
             </div>
 
             <div class="fichiers">
-                <img src="images/pdf.png">
+                <img src="../images/pdf.png">
                 <div class="contenu-droite">
                     <h3>Titre 9</h3>
                     <div class="boutons">
@@ -147,7 +147,7 @@
             </div>
 
             <div class="fichiers">
-                <img src="images/pdf.png">
+                <img src="../images/pdf.png">
                 <div class="contenu-droite">
                     <h3>Titre 10</h3>
                     <div class="boutons">
@@ -158,7 +158,7 @@
             </div>
 
             <div class="fichiers">
-                <img src="images/pdf.png">
+                <img src="../images/pdf.png">
                 <div class="contenu-droite">
                     <h3>Titre 11</h3>
                     <div class="boutons">
@@ -169,7 +169,7 @@
             </div>
 
             <div class="fichiers">
-                <img src="images/pdf.png">
+                <img src="../images/pdf.png">
                 <div class="contenu-droite">
                     <h3>Titre 12</h3>
                     <div class="boutons">
@@ -196,7 +196,7 @@
 
         <footer>
             <div class="footer-section">
-                <img src="images/logo.png" alt="Logo La Croix Bleue" class="footer-logo">
+                <img src="../images/logo.png" alt="Logo La Croix Bleue" class="footer-logo">
                 <p>123 Rue de l'Association, 75000 Paris</p>
                 <p>Tel: 01 23 45 67 89</p>
                 <p>Email: contact@croixbleue.fr</p>
@@ -215,11 +215,16 @@
                 <p><a href="#">Contact</a></p>
                 <p><a href="#">Crédit</a></p>
             </div>
+
             <div class="footer-section">
-                <p>Suivez-nous</p>
-                <input type="email" placeholder="Votre email" class="email-input">
-                <button class="subscribe-button">M'inscrire</button>
+                <p>Inscription au site</p>
+                <form id="inscriptionForm">
+                    <input type="email" placeholder="Votre email" class="email-input" required>
+                    <input type="password" placeholder="Votre mot de passe" class="password-input" required>
+                    <button type="submit" class="subscribe-button">S'inscrire</button>
+                </form>
             </div>
+
         </footer>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>

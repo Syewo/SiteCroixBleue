@@ -1,6 +1,6 @@
 @font-face {
     font-family: rubik;
-    src: url("polices/Rubik/Rubik-VariableFont_wght.ttf");
+    src: url("../polices/Rubik/Rubik-VariableFont_wght.ttf");
 }
 
 .logo {
@@ -184,26 +184,63 @@ header {
     margin: 20px 0;
 }
 
-/* Style pour le footer */
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    max-width: 250px; /* Limiter la largeur maximale de la section */
+    color: black;
+    padding-top: 10px;
+    margin-left: 10px; /* Aligner la section à gauche */
+}
+
+/* Formulaire d'inscription */
+#inscriptionForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.email-input, .password-input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%; /* S'assurer que l'input ne dépasse pas */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.email-input:focus, .password-input:focus {
+    border-color: #d86c5c;
+}
+
+.subscribe-button {
+    padding: 10px 20px;
+    background-color: #d86c5c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Assurer que le bouton prend toute la largeur disponible */
+}
+
+.subscribe-button:hover {
+    background-color: #dc8878;
+}
+
+/* Empêcher le débordement du contenu */
 footer {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: #d86c5c;      /* Couleur de fond du footer */
-    color: black;                /* Couleur du texte */
-    font-family: rubik;
-    font-size:20px;
-}
-
-/* Style pour chaque section du footer */
-.footer-section {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;                   /* Espace entre les éléments */
-    flex: 1;                     /* Chaque section prend la même largeur */
-    max-width: 200px;
+    background-color: #d86c5c;
     color: black;
-    padding-top: 10px;
+    font-family: rubik;
+    font-size: 20px;
+    flex-wrap: wrap; /* Permet à chaque section de s'adapter */
 }
 
 #date{
