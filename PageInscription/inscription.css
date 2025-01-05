@@ -65,7 +65,12 @@ header {
 .menu button{
     color: #0a6ad9;
 }
-
+.ligne {
+    height: 2px;
+    background-color: #0a6ad9;
+    width: 100%;
+    margin: 20px 0;
+}
 
 .logo {
     width: 50px;
