@@ -3,31 +3,20 @@
     src: url("../polices/Rubik/Rubik-VariableFont_wght.ttf");
 }
 
-.logo {
-    height: 200px;
-    width: 350px;
-    margin-left: 5%;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.haut{
-    font-family: rubik;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 20px;
-    margin-right: 30px;
-    margin-top: 50px;
-}
 body{
     background-color: black;
-    font-family: rubik;
+    font-family: rubik, serif;
 }
 
 h1{
     color: #0a6ad9;
 }
-
-
 
 header {
     display: flex;
@@ -37,7 +26,6 @@ header {
     justify-content: space-between;
 
 }
-
 
 .hamburger-menu {
     display: none;
@@ -73,9 +61,9 @@ header {
 }
 
 .logo {
-    width: 50px;
-    height: auto;
     margin-right: 20px;
+    width: 250px;
+    height: auto;
 }
 
 
@@ -83,7 +71,6 @@ header {
     display: flex;
     gap: 15px;
 }
-
 
 .menu-bouton {
     background-color: transparent;
@@ -97,7 +84,6 @@ header {
     margin-top: 10px;
     margin-right: 45px;
 }
-
 
 .menu-bouton.special {
     background-color: #d86c5c;
@@ -121,153 +107,154 @@ header {
     transition-duration: 1s;
 }
 
-.formulaire{
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
 }
-.formulaire label{
-    color: #0a6ad9;
-}
-
-.footer-section {
+.box{
+    background: white;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    flex: 1;
-    max-width: 250px;
-    color: black;
-    padding-top: 10px;
-    margin-left: 10px;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px rgba(0, 0, 0, 0.1);
 }
-
-
-#inscriptionForm {
+.form-box{
+    width: 450px;
+    margin: 0px 10px;
+}
+.form-box header{
+    background-color: white;
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+}
+.form-box form .field{
     display: flex;
+    margin-bottom: 10px;
     flex-direction: column;
-    gap: 10px;
+}
+.form-box form .input input{
+    height: 40px;
     width: 100%;
-}
-
-.email-input, .password-input {
-    padding: 10px;
     font-size: 16px;
-    width: 100%;
+    padding: 0 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
     outline: none;
 }
-
-.email-input:focus, .password-input:focus {
-    border-color: #d86c5c;
-}
-
-.subscribe-button {
-    padding: 10px 20px;
-    background-color: #d86c5c;
-    color: white;
-    border: none;
+.btn {
+    height: 35px;
+    background: rgba(76, 68, 182, 0.808);
+    border: 0;
     border-radius: 5px;
+    color: white;
+    font-size: 15px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all .3s;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+.btn:hover{
+    opacity: 0.82;
+}
+.submit{
     width: 100%;
 }
-
-.subscribe-button:hover {
-    background-color: #dc8878;
+.links{
+    margin-bottom: 15px;
+}
+.message{
+    text-align: center;
+    background: #f9eded;
+    padding: 15px 0px;
+    border: 1px solid #699053;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: red;
 }
 
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+.footer{
     background-color: #d86c5c;
-    color: black;
-    font-family: rubik;
-    font-size: 20px;
+    padding: 70px 0;
+}
+.footer .container{
+    max-width: 1170px;
+    margin: auto;
+}
+.footer .container .row{
+    display: flex;
     flex-wrap: wrap;
 }
-
-#date{
-    padding-top: 120px;
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
 }
-
-.footer-logo {
-    width: 60px;
-    height: auto;
+.footer .container ul {
+    list-style: none;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col ul li:not(:last-child){
     margin-bottom: 10px;
 }
-
-
-.footer-section a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-section a:hover {
-    color: black;
-}
-
-
-.email-input {
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.subscribe-button {
-    padding: 8px 15px;
-    background-color: #d86c5c;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    color: black;
-}
-
-.subscribe-button:hover {
-    background-color: #dc8878;
-}
-
-
-.search-container {
-    text-align: right;
-}
-
-#searchInput {
-    padding: 10px;
+.footer-col ul li a {
     font-size: 16px;
-    width: 300px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: black;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: white;
+    padding-left: 10px;
+}
+.footer-col img{
+    width: 40%;
+    margin: 40px;
+}
+.footer-col form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+.footer-col form .fa-regular{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.footer-col form input {
+    width: 100%;
+    background: transparent;
+    border: 0;
     outline: none;
 }
-
-#searchInput:focus {
-    border-color: #d86c5c;
+.footer-col form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
 }
-
-
-.logo {
-    width: 250px;
-    height: auto;
+.footer-col form button .fa-solid{
+    font-size: 16px;
 }
-
-.footer-logo {
-    width: 250px;
-    height: auto;
+.footer-copyright{
+    margin-left: 50px;
 }
-
-.footer-section{
-    margin-right: 10%;
-    margin-left: 5%;
-}
-
 
 @media (max-width: 1000px) {
     .menu {
@@ -291,24 +278,5 @@ footer {
     .footer-section {
         width: 100%;
         margin-bottom: 20px;
-    }
-
-
-    .fichiers {
-        flex: 0 0 50%;
-    }
-
-
-}
-
-
-@media (max-width: 740px) {
-    .conteneur-fichiers {
-        justify-content: center;
-    }
-
-    .fichiers {
-        flex: 0 0 100%;
-        justify-content: center;
     }
 }

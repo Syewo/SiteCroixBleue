@@ -1,3 +1,12 @@
+<?php
+    session_start();
+
+    include("../php/config.php");
+    if(!isset($_SESSION["email"])){
+        header("location: ../PageInscription/connexion.php");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -13,7 +22,7 @@
         <button class="menu-bouton special"><a href="/accueil.html">Accueil</a></button>
         <button class="menu-bouton"><a href="../PageActualites/actualites.html">Actualités</a></button>
         <button class="menu-bouton"><a href="../PageLiberateur/liberateur.html">Liberateur</a></button>
-        <button class="menu-bouton"><a href="../PageInscription/inscription.html">Inscription</a></button>
+        <button class="menu-bouton"><a href="../PageInscription/inscription.php">Inscription</a></button>
         <button class="menu-bouton"><a href="../PageEnquete/enquete.html">Enquete</a></button>
         <button class="menu-bouton">Nous soutenir</button>
     </nav>
@@ -24,7 +33,7 @@
         <button class="menu-bouton special"><a href="/accueil.html">Accueil</a></button>
         <button class="menu-bouton"><a href="../PageActualites/actualites.html">Actualités</a></button>
         <button class="menu-bouton"><a href="../PageLiberateur/liberateur.html">Liberateur</a></button>
-        <button class="menu-bouton"><a href="../PageInscription/inscription.html">Inscription</a></button>
+        <button class="menu-bouton"><a href="../PageInscription/inscription.php">Inscription</a></button>
         <button class="menu-bouton">Notre activité</button>
         <button class="menu-bouton">Nous soutenir</button>
     </div>
