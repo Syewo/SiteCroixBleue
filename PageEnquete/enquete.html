@@ -4,36 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Questionnaire</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 20px;
-    }
-    .container {
-      max-width: 600px;
-      margin: auto;
-      background: #fff;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    h1 {
-      text-align: center;
-      color: #333;
-    }
-    .question {
-      margin-bottom: 20px;
-    }
-    .question h2 {
-      font-size: 18px;
-      color: #555;
-    }
-    .question label {
-      display: block;
-      margin-bottom: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="enquete.css">
 </head>
 <body>
 <div class="container">
@@ -47,11 +18,16 @@
       <label><input type="radio" name="color" value="jaune"> Jaune</label>
     </div>
     <div class="question">
-      <h2>2/ Dans quel lieu de vie êtes-vous ?</h2>
-      <label><input type="radio" name="animal" value="chat"> Chat</label>
-      <label><input type="radio" name="animal" value="chien"> Chien</label>
-      <label><input type="radio" name="animal" value="oiseau"> Oiseau</label>
-      <label><input type="radio" name="animal" value="poisson"> Poisson</label>
+      <h2>2/Etes-vous en situation de handicap ?</h2>
+      <label><input type="radio">Oui</label>
+      <label><input type="radio">Non</label>
+      <dd><h2>2/a Si oui votre logement correspond-il a une orientation CDAPH ?</h2>
+      <label><input type="radio">Oui</label>
+      <label><input type="radio">Non</label>
+      <dd><h2>2/b Le lieu de vie correspond-il a votre choix ?</h2>
+      <label><input type="radio">Oui</label>
+      <label><input type="radio">Non</label>
+      </br>
     </div>
     <div class="question">
       <h2>3/ Quel est votre activité ?</h2>
