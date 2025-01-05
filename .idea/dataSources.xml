@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="donnees" uuid="8c0f9205-58e7-4977-b6b7-9754d0c1e4e3">
+    <data-source source="LOCAL" name="donnees" uuid="05a37e09-317e-4cdc-a59a-ce1fa5d14a9a">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\Mticl\Documents\BUT_2\web\donnees\donnees.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Users\oweys\PhpstormProjects\SiteCroixBleue\donnees\donnees.db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
       <libraries>
         <library>

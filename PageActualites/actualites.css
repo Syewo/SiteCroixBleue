@@ -27,17 +27,17 @@ h1{
     color: #0a6ad9;
 }
 
-/* Style pour le header */
+
 header {
     display: flex;
     align-items: center;
     padding: 10px 20px;
-    background-color: black; /* Couleur de fond du header */
-    justify-content: space-between; /* Espace entre le logo et les boutons */
+    background-color: black;
+    justify-content: space-between;
 }
 
 .hamburger-menu {
-    display: none; /* Cacher le hamburger menu sur les grandes tailles d'écran */
+    display: none;
     font-size: 30px;
     cursor: pointer;
     padding: 10px;
@@ -63,23 +63,23 @@ header {
     color: #0a6ad9;
 }
 
-/* Style pour l'image du logo */
+
 .logo {
-    width: 50px;          /* Ajustez la taille du logo selon vos besoins */
-    height: auto;         /* Conserve les proportions */
-    margin-right: 20px;   /* Espace à droite du logo */
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
 }
 
-/* Style pour le conteneur de menu de navigation */
+
 .menu {
     display: flex;
-    gap: 15px;           /* Espace entre chaque bouton */
+    gap: 15px;
 }
 
-/* Style pour les boutons de navigation */
+
 .menu-bouton {
-    background-color: transparent; /* Fond transparent */
-    color: #333;                  /* Couleur du texte */
+    background-color: transparent;
+    color: #333;
     border: none;
     font-size: 20px;
     cursor: pointer;
@@ -90,81 +90,68 @@ header {
     margin-right: 45px;
 }
 
-/* Style pour le bouton spécial "Nous soutenir" */
+
 .menu-bouton.special {
     background-color: #d86c5c;
     color: white;
     border-radius: 15px;
 }
+.menu-bouton.special a{
+    text-decoration: none;
+    color: white;
+}
 
-/* Effet au survol des boutons */
+
 .menu-bouton:hover {
     transition-duration: 13s;
     border: 1px solid #0a6ad9;
     border-radius: 15px;
 }
 
-/* Effet au survol du bouton spécial */
 .menu-bouton.special:hover {
     background-color: #dc8878;
     transition-duration: 1s;
 }
 
-
-
-
-
-
-
-
 #carouselActualites img {
-    height: 50vh; /* Ajustez la hauteur de l'image */
-    object-fit: cover; /* Pour s'assurer que l'image remplit le carrousel */
+    height: 50vh;
+    object-fit: cover;
 }
 
 .carousel-caption h5 {
-    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 10px;
     border-radius: 5px;
     color: white;
 }
 
-
-
-
-
-
-
-
-
-
 .conteneur-fichiers {
     display: flex;
-    flex-direction: column; /* Disposer les fichiers verticalement */
-    align-items: center; /* Centrer les fichiers horizontalement */
-    gap: 20px; /* Espacement vertical entre les fichiers */
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .fichiers {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%; /* Prend toute la largeur disponible */
-    margin: 0 auto; /* Centrer le conteneur */
-    gap: 30px; /* Espace entre les fichiers */
+    width: 100%;
+    margin: 0 auto;
+    gap: 30px;
 }
 
 .fichier {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%; /* Largeur de chaque fichier, ajustez selon vos besoins */
-    max-width: 1000px; /* Largeur maximale */
-    padding: 20px; /* Espacement interne */
-    background-color: #f9f9f9; /* Fond clair */
-    border: 1px solid #ddd; /* Bordure légère */
-    border-radius: 10px; /* Coins arrondis */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour le relief */
+    width: 80%;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .fichier h3 {
@@ -175,51 +162,51 @@ header {
 }
 
 .fichier img {
-    width: 80%;         /* Ajuste la taille de l'image à 80% de la largeur du conteneur */
-    height: auto;       /* Conserve les proportions de l'image */
-    object-fit: contain; /* S'assure que l'image s'ajuste bien sans distorsion */
+    width: 80%;
+    height: auto;
+    object-fit: contain;
     margin-bottom: 20px;
-    border-radius: 8px;  /* Coins arrondis pour l'image */
+    border-radius: 8px;
 }
 
 .fichier h5 {
     width: 100%;
-    background-color: #333; /* Fond sombre */
-    color: #fff; /* Texte blanc */
+    background-color: #333;
+    color: #fff;
     padding: 15px;
     border-radius: 8px;
     text-align: center;
     font-size: 16px;
 }
 
-/* Contenu à droite de l'image */
+
 .contenu-droite {
     display: flex;
-    flex-direction: column;   /* Disposer les éléments (titre et boutons) verticalement */
-    justify-content: center;   /* Centrer verticalement le contenu */
+    flex-direction: column;
+    justify-content: center;
 }
 
 .contenu-droite h3 {
-    margin: 10px 0; /* Espacement au-dessus et au-dessous du titre */
-    font-size: 22px; /* Taille du titre */
+    margin: 10px 0;
+    font-size: 22px;
     color: #0a6ad9;
-    text-align: center; /* Centrer le texte */
+    text-align: center;
 }
 
 .boutons h5 {
-    width: 100%; /* Largeur du résumé égale à celle de l'image */
-    max-width: 600px; /* Alignement avec la largeur maximale de l'image */
-    padding: 10px; /* Espacement intérieur */
-    margin: 15px auto; /* Centrer le bloc et espacer verticalement */
-    background-color: #333; /* Couleur de fond */
-    color: white; /* Couleur du texte */
-    border-radius: 8px; /* Coins arrondis */
-    text-align: center; /* Centrer le texte */
-    font-size: 16px; /* Taille du texte */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre pour un effet de relief */
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin: 15px auto;
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Ligne blanche */
+
 .ligne {
     height: 2px;
     background-color: #0a6ad9;
@@ -227,23 +214,23 @@ header {
     margin: 20px 0;
 }
 
-/* Style pour le footer */
+
 footer {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: #d86c5c;      /* Couleur de fond du footer */
-    color: black;                /* Couleur du texte */
+    background-color: #d86c5c;
+    color: black;
     font-family: rubik;
     font-size:20px;
 }
 
-/* Style pour chaque section du footer */
+
 .footer-section {
     display: flex;
     flex-direction: column;
-    gap: 10px;                   /* Espace entre les éléments */
-    flex: 1;                     /* Chaque section prend la même largeur */
+    gap: 10px;
+    flex: 1;
     max-width: 200px;
     color: black;
     padding-top: 10px;
@@ -253,14 +240,13 @@ footer {
     padding-top: 90px;
 }
 
-/* Logo du footer */
 .footer-logo {
-    width: 60px;                 /* Taille du logo */
+    width: 60px;
     height: auto;
     margin-bottom: 10px;
 }
 
-/* Style pour les liens dans le footer */
+
 .footer-section a {
     color: white;
     text-decoration: none;
@@ -268,10 +254,10 @@ footer {
 }
 
 .footer-section a:hover {
-    color: black;               /* Changement de couleur au survol */
+    color: black;
 }
 
-/* Style pour l'input et le bouton d'inscription */
+
 .email-input {
     padding: 8px;
     border: none;
@@ -294,7 +280,7 @@ footer {
     background-color: #dc8878;
 }
 
-/* Barre de recherche */
+
 .search-container {
     text-align: right;
 }
@@ -314,42 +300,42 @@ footer {
 
 
 .logo {
-    width: 250px; /* Modifie la taille selon tes besoins */
-    height: auto; /* Conserver les proportions de l'image */
+    width: 250px;
+    height: auto;
 }
 
 .footer-logo {
-    width: 250px; /* Modifie la taille selon tes besoins */
-    height: auto; /* Conserver les proportions de l'image */
+    width: 250px;
+    height: auto;
 }
 
 @media (max-width: 1000px) {
     .menu {
-        display: none; /* Cacher le menu normal */
+        display: none;
     }
 
     .hamburger-menu {
-        display: block; /* Afficher le hamburger menu */
+        display: block;
     }
 
     .menu-hamburger {
-        display: block; /* Afficher le menu hamburger en cliquant */
+        display: block;
     }
 }
 
-/* Media query pour les écrans de 900 pixels et moins */
+
 @media (max-width: 900px) {
     footer {
-        display: block; /* Permet d'empiler les sections les unes sous les autres */
+        display: block;
     }
 
     .footer-section {
-        width: 100%; /* Chaque section prend toute la largeur */
-        margin-bottom: 20px; /* Ajoute un espacement entre les sections */
+        width: 100%;
+        margin-bottom: 20px;
     }
 
     .fichiers {
-        flex: 0 0 50%;        /* Chaque fichier occupe 50% de la largeur pour deux par ligne */
+        flex: 0 0 50%;
     }
 }
 
@@ -358,17 +344,17 @@ footer {
 /* Responsive */
 @media (max-width: 768px) {
     #carouselActualites {
-        height: 40vh; /* Plus petit sur les petits écrans */
+        height: 40vh;
     }
 
     .carousel-title {
-        font-size: 1.5em; /* Réduit la taille du titre */
+        font-size: 1.5em;
         bottom: 15px;
         left: 15px;
     }
 
     .carousel-control-prev, .carousel-control-next {
-        font-size: 1.5em; /* Taille des contrôles réduite */
+        font-size: 1.5em;
         padding: 8px;
     }
 
@@ -379,14 +365,14 @@ footer {
 }
 
 
-/* Media query pour les écrans de 740 pixels et moins */
+
 @media (max-width: 740px) {
     .conteneur-fichiers {
-        justify-content: center; /* Centre les fichiers horizontalement */
+        justify-content: center;
     }
 
     .fichiers {
-        flex: 0 0 100%;        /* Chaque fichier occupe 100% de la largeur pour un par ligne */
-        justify-content: center; /* Centre le contenu à l'intérieur de chaque fichier */
+        flex: 0 0 100%;
+        justify-content: center;
     }
 }
