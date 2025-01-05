@@ -73,6 +73,7 @@ header {
     margin-right: 20px;
 }
 
+
 .menu {
     display: flex;
     gap: 15px;
@@ -111,74 +112,14 @@ header {
     transition-duration: 1s;
 }
 
-
-.conteneur-fichiers {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 75px;
-    padding-left: 50px;
-    padding-right: 50px;
+.formulaire{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
-
-
-.fichiers {
-    display: flex;
-    align-items: center;
-    flex: 0 0 33.33%;
-    padding: 10px;
-    box-sizing: border-box;
-    color: white;
-}
-
-
-.fichiers img {
-    width: 100px;
-    height: auto;
-    margin-right: 20px;
-}
-
-
-.contenu-droite {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-
-.contenu-droite h3 {
-    margin: 0 0 10px 0;
-    font-size: 18px;
+.formulaire label{
     color: #0a6ad9;
-}
-
-
-.boutons {
-    display: flex;
-    gap: 10px;
-    font-family: rubik;
-}
-
-.bouton {
-    padding: 10px 20px;
-    background-color: #d86c5c;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.bouton:hover {
-    background-color: #dc8878;
-}
-
-
-.ligne {
-    height: 2px;
-    background-color: #0a6ad9;
-    width: 100%;
-    margin: 20px 0;
 }
 
 .footer-section {

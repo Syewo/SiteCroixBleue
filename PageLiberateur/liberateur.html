@@ -1,152 +1,152 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <title>LIBERATEUR - La Croix Bleue</title>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="liberateur.css">
+<head>
+    <meta charset="UTF-8">
+    <title>LIBERATEUR - La Croix Bleue</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="liberateur.css">
 
-    </head>
-    <body>
-        <script src="liberateur.js"></script>
-        <header>
-            <img src="../images/logo.png" alt="Logo La Croix Bleue" class="logo">
-            <nav class="menu">
-                <button class="menu-bouton">Accueil</button>
-                <button class="menu-bouton">Actualités</button>
-                <button class="menu-bouton">Documents</button>
-                <button class="menu-bouton">Contact</button>
-                <button class="menu-bouton">Notre activité</button>
-                <button class="menu-bouton special">Nous soutenir</button>
-            </nav>
+</head>
+<body>
+<script src="liberateur.js"></script>
+<header>
+    <img src="../images/logo.png" alt="Logo La Croix Bleue" class="logo">
+    <nav class="menu">
+        <button class="menu-bouton">Accueil</button>
+        <button class="menu-bouton">Actualités</button>
+        <button class="menu-bouton">Documents</button>
+        <button class="menu-bouton">Contact</button>
+        <button class="menu-bouton">Notre activité</button>
+        <button class="menu-bouton special">Nous soutenir</button>
+    </nav>
 
-            <div class="hamburger-menu" id="hamburger-menu" onclick="toggleMenu()">
-                &#9776; <!-- Le caractère du menu hamburger -->
-            </div>
+    <div class="hamburger-menu" id="hamburger-menu" onclick="toggleMenu()">
+        &#9776; <!-- Le caractère du menu hamburger -->
+    </div>
 
-            <div class="menu-hamburger" id="menu-hamburger">
-                <button class="menu-bouton">Accueil</button>
-                <button class="menu-bouton">Actualités</button>
-                <button class="menu-bouton">Documents</button>
-                <button class="menu-bouton">Contact</button>
-                <button class="menu-bouton">Notre activité</button>
-                <button class="menu-bouton special">Nous soutenir</button>
-            </div>
-        </header>
+    <div class="menu-hamburger" id="menu-hamburger">
+        <button class="menu-bouton">Accueil</button>
+        <button class="menu-bouton">Actualités</button>
+        <button class="menu-bouton">Documents</button>
+        <button class="menu-bouton">Contact</button>
+        <button class="menu-bouton">Notre activité</button>
+        <button class="menu-bouton special">Nous soutenir</button>
+    </div>
+</header>
 
 
-        <div class="haut">
-            <h1>LIBERATEUR</h1>
-            <div class="search-container">
-                <input type="text" id="searchInput" placeholder="Rechercher un titre..." onkeyup="searchTitles()">
+<div class="haut">
+    <h1>LIBERATEUR</h1>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Rechercher un titre..." onkeyup="searchTitles()">
+    </div>
+</div>
+
+
+<div class="ligne"></div>
+
+<!-- Conteneur global pour tous les fichiers -->
+<div class="conteneur-fichiers">
+    <div class="fichiers">
+        <img src="../images/pdf.png">
+        <div class="contenu-droite">
+            <h3>Titre 1</h3>
+            <div class="boutons">
+                <button class="bouton">Télécharger</button>
+                <button class="bouton">Lecture</button>
             </div>
         </div>
+    </div>
 
-
-        <div class="ligne"></div>
-
-        <!-- Conteneur global pour tous les fichiers -->
-        <div class="conteneur-fichiers">
-            <div class="fichiers">
-                <img src="../images/pdf.png">
-                <div class="contenu-droite">
-                    <h3>Titre 1</h3>
-                    <div class="boutons">
-                        <button class="bouton">Télécharger</button>
-                        <button class="bouton">Lecture</button>
-                    </div>
-                </div>
+    <div class="fichiers">
+        <img src="../images/pdf.png">
+        <div class="contenu-droite">
+            <h3>Titre 2</h3>
+            <div class="boutons">
+                <button class="bouton">Télécharger</button>
+                <button class="bouton">Lecture</button>
             </div>
+        </div>
+    </div>
 
-            <div class="fichiers">
-                <img src="../images/pdf.png">
-                <div class="contenu-droite">
-                    <h3>Titre 2</h3>
-                    <div class="boutons">
-                        <button class="bouton">Télécharger</button>
-                        <button class="bouton">Lecture</button>
-                    </div>
-                </div>
+    <div class="fichiers">
+        <img src="../images/pdf.png">
+        <div class="contenu-droite">
+            <h3>Titre 3</h3>
+            <div class="boutons">
+                <button class="bouton">Télécharger</button>
+                <button class="bouton">Lecture</button>
             </div>
+        </div>
+    </div>
 
-            <div class="fichiers">
-                <img src="../images/pdf.png">
-                <div class="contenu-droite">
-                    <h3>Titre 3</h3>
-                    <div class="boutons">
-                        <button class="bouton">Télécharger</button>
-                        <button class="bouton">Lecture</button>
-                    </div>
-                </div>
+    <div class="fichiers">
+        <img src="../images/pdf.png">
+        <div class="contenu-droite">
+            <h3>Titre 4</h3>
+            <div class="boutons">
+                <button class="bouton">Télécharger</button>
+                <button class="bouton">Lecture</button>
             </div>
+        </div>
+    </div>
 
-            <div class="fichiers">
-                <img src="../images/pdf.png">
-                <div class="contenu-droite">
-                    <h3>Titre 4</h3>
-                    <div class="boutons">
-                        <button class="bouton">Télécharger</button>
-                        <button class="bouton">Lecture</button>
-                    </div>
-                </div>
+    <div class="fichiers">
+        <img src="../images/pdf.png">
+        <div class="contenu-droite">
+            <h3>Titre 5</h3>
+            <div class="boutons">
+                <button class="bouton">Télécharger</button>
+                <button class="bouton">Lecture</button>
             </div>
+        </div>
+    </div>
 
-            <div class="fichiers">
-                <img src="../images/pdf.png">
-                <div class="contenu-droite">
-                    <h3>Titre 5</h3>
-                    <div class="boutons">
-                        <button class="bouton">Télécharger</button>
-                        <button class="bouton">Lecture</button>
-                    </div>
-                </div>
+    <div class="fichiers">
+        <img src="../images/pdf.png">
+        <div class="contenu-droite">
+            <h3>Titre 6</h3>
+            <div class="boutons">
+                <button class="bouton">Télécharger</button>
+                <button class="bouton">Lecture</button>
             </div>
+        </div>
+    </div>
 
-            <div class="fichiers">
-                <img src="../images/pdf.png">
-                <div class="contenu-droite">
-                    <h3>Titre 6</h3>
-                    <div class="boutons">
-                        <button class="bouton">Télécharger</button>
-                        <button class="bouton">Lecture</button>
-                    </div>
-                </div>
+    <div class="fichiers">
+        <img src="../images/pdf.png">
+        <div class="contenu-droite">
+            <h3>Titre 7</h3>
+            <div class="boutons">
+                <button class="bouton">Télécharger</button>
+                <button class="bouton">Lecture</button>
             </div>
+        </div>
+    </div>
 
-            <div class="fichiers">
-                <img src="../images/pdf.png">
-                <div class="contenu-droite">
-                    <h3>Titre 7</h3>
-                    <div class="boutons">
-                        <button class="bouton">Télécharger</button>
-                        <button class="bouton">Lecture</button>
-                    </div>
-                </div>
+    <div class="fichiers">
+        <img src="../images/pdf.png">
+        <div class="contenu-droite">
+            <h3>Titre 8</h3>
+            <div class="boutons">
+                <button class="bouton">Télécharger</button>
+                <button class="bouton">Lecture</button>
             </div>
+        </div>
+    </div>
 
-            <div class="fichiers">
-                <img src="../images/pdf.png">
-                <div class="contenu-droite">
-                    <h3>Titre 8</h3>
-                    <div class="boutons">
-                        <button class="bouton">Télécharger</button>
-                        <button class="bouton">Lecture</button>
-                    </div>
-                </div>
+    <div class="fichiers">
+        <img src="../images/pdf.png">
+        <div class="contenu-droite">
+            <h3>Titre 9</h3>
+            <div class="boutons">
+                <button class="bouton">Télécharger</button>
+                <button class="bouton">Lecture</button>
             </div>
+        </div>
+    </div>
 
-            <div class="fichiers">
-                <img src="../images/pdf.png">
-                <div class="contenu-droite">
-                    <h3>Titre 9</h3>
-                    <div class="boutons">
-                        <button class="bouton">Télécharger</button>
-                        <button class="bouton">Lecture</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="fichiers">
+    <div class="fichiers">
                 <img src="../images/pdf.png">
                 <div class="contenu-droite">
                     <h3>Titre 10</h3>
