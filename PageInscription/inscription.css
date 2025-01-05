@@ -191,7 +191,7 @@ footer {
 }
 
 #date{
-    padding-top: 90px;
+    padding-top: 120px;
 }
 
 .footer-logo {
@@ -261,6 +261,11 @@ footer {
 .footer-logo {
     width: 250px;
     height: auto;
+}
+
+.footer-section{
+    margin-right: 10%;
+    margin-left: 5%;
 }
 
 

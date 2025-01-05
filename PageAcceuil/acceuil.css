@@ -11,6 +11,96 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
+h1{
+    color: #0a6ad9;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+    justify-content: space-between;
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-hamburger {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-hamburger button {
+    width: 100%;
+    padding: 10px;
+    background-color:transparent;
+    border: none;
+    color: #0a6ad9;
+    text-align: center;
+}
+
+.menu button{
+    color: #0a6ad9;
+}
+
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+}
+
+
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+
+.menu-bouton {
+    background-color: transparent;
+    color: #333;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    margin-right: 45px;
+}
+
+
+.menu-bouton.special {
+    background-color: #d86c5c;
+    color: white;
+    border-radius: 15px;
+}
+.menu-bouton.special a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.menu-bouton:hover {
+    transition-duration: 13s;
+    border: 1px solid #0a6ad9;
+    border-radius: 15px;
+}
+
+.menu-bouton.special:hover {
+    background-color: #dc8878;
+    transition-duration: 1s;
+}
+
 .navbar{
     position: absolute;
     display: flex;
@@ -168,98 +258,95 @@ body {
     color: black;
 }
 
-.footer{
-    background-color: #d86c5c;
-    padding: 70px 0;
-}
-
-.footer .container{
-    max-width: 1170px;
-    margin: auto;
-}
-
-.footer .container .row{
+footer {
     display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #d86c5c;
+    color: black;
+    font-family: rubik;
+    font-size: 20px;
     flex-wrap: wrap;
 }
 
-.footer-col{
-    width: 25%;
-    padding: 0 15px;
+#date{
+    padding-top: 120px;
 }
 
-.footer .container ul {
-    list-style: none;
-}
-
-.footer-col h4{
-    font-size: 18px;
-    color: black;
-    text-transform: capitalize;
-    margin-bottom: 35px;
-    font-weight: 500;
-    position: relative;
-}
-
-.footer-col ul li:not(:last-child){
+.footer-logo {
+    width: 60px;
+    height: auto;
     margin-bottom: 10px;
 }
 
-.footer-col ul li a {
-    font-size: 16px;
-    text-transform: capitalize;
-    text-decoration: none;
-    font-weight: 300;
-    color: black;
-    display: block;
-    transition: all 0.3s ease;
+.footer-section{
+    margin-right: 10%;
+    margin-left: 5%;
 }
 
-.footer-col ul li a:hover{
+.footer-section a {
     color: white;
-    padding-left: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.footer-col img{
-    width: 40%;
-    margin: 40px;
+.footer-section a:hover {
+    color: black;
 }
 
-.footer-col form{
-    padding-bottom: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 50px;
+
+.email-input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
-.footer-col form .fa-regular{
-    font-size: 18px;
-    margin-right: 10px;
-}
-
-.footer-col form input {
-    width: 100%;
-    background: transparent;
-    border: 0;
-    outline: none;
-}
-
-.footer-col form button{
-    background: transparent;
-    border: 0;
-    outline: none;
+.subscribe-button {
+    padding: 8px 15px;
+    background-color: #d86c5c;
+    color: white;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: black;
 }
 
-.footer-col form button .fa-solid{
+.subscribe-button:hover {
+    background-color: #dc8878;
+}
+
+
+.search-container {
+    text-align: right;
+}
+
+#searchInput {
+    padding: 10px;
     font-size: 16px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
 }
 
-.footer-copyright{
-    margin-left: 50px;
+#searchInput:focus {
+    border-color: #d86c5c;
 }
+
+
+.logo {
+    width: 250px;
+    height: auto;
+}
+
+.footer-logo {
+    width: 250px;
+    height: auto;
+}
+
+
 
 @media screen and (max-width:  1300px){
     .navbar{
