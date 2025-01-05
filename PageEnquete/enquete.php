@@ -1,3 +1,12 @@
+<?php
+    session_start();
+
+    include("../php/config.php");
+    if(!isset($_SESSION["email"])){
+        header("location: ../PageInscription/connexion.php");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>

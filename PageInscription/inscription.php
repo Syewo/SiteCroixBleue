@@ -9,7 +9,7 @@
     <header>
         <img src="../images/logo.png" alt="Logo La Croix Bleue" class="logo">
         <nav class="menu">
-            <button class="menu-bouton"><a href="../PageAccueil/accueil.php">Accueil</a></button>
+            <button class="menu-bouton"><a href="../PageAccueil/accueil.html">Accueil</a></button>
             <button class="menu-bouton"><a href="../PageActualites/actualites.html">Actualités</a></button>
             <button class="menu-bouton"><a href="../PageLiberateur/liberateur.html">Liberateur</a></button>
             <button class="menu-bouton special"><a href="oldInscription.html">Inscription</a></button>
@@ -22,10 +22,10 @@
         </div>
 
         <div class="menu-hamburger" id="menu-hamburger">
-            <button class="menu-bouton"><a href="../PageAccueil/accueil.php">Accueil</a></button>
+            <button class="menu-bouton"><a href="../PageAccueil/accueil.html">Accueil</a></button>
             <button class="menu-bouton"><a href="../PageActualites/actualites.html">Actualités</a></button>
             <button class="menu-bouton"><a href="../PageLiberateur/liberateur.html">Liberateur</a></button>
-            <button class="menu-bouton special"><a href="oldInscription.html">Inscription</a></button>
+            <button class="menu-bouton special"><a href="inscription.php">Inscription</a></button>
             <button class="menu-bouton">Notre activité</button>
             <button class="menu-bouton">Nous soutenir</button>
         </div>

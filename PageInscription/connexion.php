@@ -27,7 +27,7 @@
                     $_SESSION['nom'] = $utilisateur['nom'];
                     $_SESSION['prenom'] = $utilisateur['prenom'];
                     $_SESSION['email'] = $utilisateur['email'];
-                    header('Location: ../PageAccueil/accueil.php');
+                    header('Location: ../PageAccueil/accueil.html');
                 } else {
                     echo "<div class='message'>
                            <p>Email ou Mot de passe invalide</p>
