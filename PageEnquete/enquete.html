@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questionnaire</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .question h2 {
+      font-size: 18px;
+      color: #555;
+    }
+    .question label {
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Questionnaire</h1>
+  <form>
+    <div class="question">
+      <h2>1/ Ou habitez-vous ?</h2>
+      <label><input type="radio" name="color" value="rouge"> Rouge</label>
+      <label><input type="radio" name="color" value="bleu"> Bleu</label>
+      <label><input type="radio" name="color" value="vert"> Vert</label>
+      <label><input type="radio" name="color" value="jaune"> Jaune</label>
+    </div>
+    <div class="question">
+      <h2>2/ Dans quel lieu de vie êtes-vous ?</h2>
+      <label><input type="radio" name="animal" value="chat"> Chat</label>
+      <label><input type="radio" name="animal" value="chien"> Chien</label>
+      <label><input type="radio" name="animal" value="oiseau"> Oiseau</label>
+      <label><input type="radio" name="animal" value="poisson"> Poisson</label>
+    </div>
+    <div class="question">
+      <h2>3/ Quel est votre activité ?</h2>
+      <label><input type="radio" name="food" value="pizza"> Pizza</label>
+      <label><input type="radio" name="food" value="sushi"> Sushi</label>
+      <label><input type="radio" name="food" value="burger"> Burger</label>
+      <label><input type="radio" name="food" value="salade"> Salade</label>
+    </div>
+    <div class="question">
+      <h2>4/ Quel est votre qualité de vie ?</h2>
+      <label><input type="checkbox" name="activities" value="lire"> Lire</label>
+      <label><input type="checkbox" name="activities" value="sport"> Faire du sport</label>
+      <label><input type="checkbox" name="activities" value="films"> Regarder des films</label>
+      <label><input type="checkbox" name="activities" value="voyager"> Voyager</label>
+      <label><input type="checkbox" name="activities" value="cuisiner"> Cuisiner</label>
+    </div>
+    <div class="question">
+      <h2>5/ Avez-vous besoin de soutien ?</h2>
+      <label><input type="radio" name="season" value="printemps"> Printemps</label>
+      <label><input type="radio" name="season" value="ete"> Été</label>
+      <label><input type="radio" name="season" value="automne"> Automne</label>
+      <label><input type="radio" name="season" value="hiver"> Hiver</label>
+    </div>
+
+    <button type="submit">Envoyer</button>
+  </form>
+</div>
+</body>
+</html>
