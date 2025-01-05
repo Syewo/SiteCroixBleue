@@ -104,6 +104,10 @@ header {
     color: white;
     border-radius: 15px;
 }
+.menu-bouton.special a{
+    text-decoration: none;
+    color: white;
+}
 
 
 .menu-bouton:hover {
