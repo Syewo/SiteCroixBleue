@@ -18,58 +18,57 @@
 <body>
 <div class="container">
   <h1>Questionnaire</h1>
-  <form>
+  <form method="POST" action="../PageResultat/traitement.php">
     <div class="question">
       <h2>1/ Ou habitez-vous ?</h2>
-      <label><input type="radio"> Auvergne-Rhône-Alpes</label>
-      <label><input type="radio"> Bourgogne-Franche-Comté</label>
-      <label><input type="radio"> Bretagne</label>
-      <label><input type="radio"> Centre-Val de Loire</label>
-      <label><input type="radio"> Corse</label>
-      <label><input type="radio"> Grand Est</label>
-      <label><input type="radio"> Hauts-de-France</label>
-      <label><input type="radio"> Ile-de-France</label>
-      <label><input type="radio"> Normandie</label>
-      <label><input type="radio"> Nouvelle-Aquitaine</label>
-      <label><input type="radio"> Occitanie</label>
-      <label><input type="radio"> Pays de la Loire</label>
-      <label><input type="radio"> Provence Alpes Côte d’Azur</label>
-      <label><input type="radio"> Guadeloupe</label>
-      <label><input type="radio"> Guyane</label>
-      <label><input type="radio"> Martinique</label>
-      <label><input type="radio"> Mayotte</label>
-      <label><input type="radio"> la Réunion</label>
-      <label><input type="radio"> Je vis à l'étranger</label>
+      <label><input type="radio" name="region"> Auvergne-Rhône-Alpes</label>
+      <label><input type="radio" name="region"> Bourgogne-Franche-Comté</label>
+      <label><input type="radio" name="region"> Bretagne</label>
+      <label><input type="radio" name="region"> Centre-Val de Loire</label>
+      <label><input type="radio" name="region"> Corse</label>
+      <label><input type="radio" name="region"> Grand Est</label>
+      <label><input type="radio" name="region"> Hauts-de-France</label>
+      <label><input type="radio" name="region"> Ile-de-France</label>
+      <label><input type="radio" name="region"> Normandie</label>
+      <label><input type="radio" name="region"> Nouvelle-Aquitaine</label>
+      <label><input type="radio" name="region"> Occitanie</label>
+      <label><input type="radio" name="region"> Pays de la Loire</label>
+      <label><input type="radio" name="region"> Provence Alpes Côte d’Azur</label>
+      <label><input type="radio" name="region"> Guadeloupe</label>
+      <label><input type="radio" name="region"> Guyane</label>
+      <label><input type="radio" name="region"> Martinique</label>
+      <label><input type="radio" name="region"> Mayotte</label>
+      <label><input type="radio" name="region"> la Réunion</label>
+      <label><input type="radio" name="region"> Je vis à l'étranger</label>
     </div>
-
 
 
     <div class="question">
       <h2>2/Etes-vous en situation de handicap ?</h2>
-      <label><input type="radio">Oui</label>
-      <label><input type="radio">Non</label>
-      <dd><h2>2/a Si oui votre logement correspond-il a une orientation CDAPH ?</h2>
-      <label><input type="radio">Oui</label>
-      <label><input type="radio">Non</label>
-      <dd><h2>2/b Le lieu de vie correspond-il a votre choix ?</h2>
-      <label><input type="radio">Oui</label>
-      <label><input type="radio">Non</label>
+      <label><input type="radio" name="handicap">Oui</label>
+      <label><input type="radio" name="handicap">Non</label>
+      <div><h2>2/a Si oui votre logement correspond-il a une orientation CDAPH ?</h2></div>
+      <label><input type="radio" name="cdaph">Oui</label>
+      <label><input type="radio" name="cdaph">Non</label>
+      <div><h2>2/b Le lieu de vie correspond-il a votre choix ?</h2></div>
+      <label><input type="radio" name="lieu_vie">Oui</label>
+      <label><input type="radio" name="lieu_vie">Non</label>
     </div>
 
 
 
     <div class="question">
       <h2>3/ Quel est votre activité ?</h2>
-      <label><input type="radio"> Scolarité en milieu ordinaire </label>
-      <label><input type="radio"> Scolarité en dispositif spécialisé de l'Education National </label>
-      <label><input type="radio"> Instruction en Famille </label>
-      <label><input type="radio"> Scolarité dans un établissement médico-social (IME, IMPRO, ...) </label>
-      <label><input type="radio"> Formation Professionnel </label>
-      <label><input type="radio"> Etudes Supérieures </label>
-      <label><input type="radio"> Activité Professionnel en milieu ordinaire </label>
-      <label><input type="radio"> Activité Professionnel en milieu protégé (ESAT, Entreprise adaptée) </label>
-      <label><input type="radio"> Sans aucune activité scolaire ou professionnel </label>
-      <label><input type="radio"> Autre </label>
+      <label><input type="radio" name="activite"> Scolarité en milieu ordinaire </label>
+      <label><input type="radio" name="activite"> Scolarité en dispositif spécialisé de l'Education National </label>
+      <label><input type="radio" name="activite"> Instruction en Famille </label>
+      <label><input type="radio" name="activite"> Scolarité dans un établissement médico-social (IME, IMPRO, ...) </label>
+      <label><input type="radio" name="activite"> Formation Professionnel </label>
+      <label><input type="radio" name="activite"> Etudes Supérieures </label>
+      <label><input type="radio" name="activite"> Activité Professionnel en milieu ordinaire </label>
+      <label><input type="radio" name="activite"> Activité Professionnel en milieu protégé (ESAT, Entreprise adaptée) </label>
+      <label><input type="radio" name="activite"> Sans aucune activité scolaire ou professionnel </label>
+      <label><input type="radio" name="activite"> Autre </label>
     </div>
 
 
@@ -92,10 +91,10 @@
 
     <div class="question">
       <h2>5/ Avez-vous besoin de soutien ?</h2>
-      <label><input type="radio"> Printemps</label>
-      <label><input type="radio"> Été</label>
-      <label><input type="radio"> Automne</label>
-      <label><input type="radio"> Hiver</label>
+      <label><input type="radio" name="soutien"> Je suis totalement autonome</label>
+      <label><input type="radio" name="soutien"> Un soutien à l'autonomie pour le logement, l'accès à la santé, les loisirs, les démarches administratives</label>
+      <label><input type="radio" name="soutien"> Une aide pour tous les actes de la vie quotidienne et la précence d'une tierce personne 24 heures sur 24</label>
+      <label><input type="radio" name="soutien"> Des interventions et stimulations ponctuelles mais quotidiennes (toilette, sorties, repas, communication..)</label>
     </div>
 
     <button type="submit">Envoyer</button>
