@@ -75,16 +75,16 @@
 
     <div class="question">
       <h2>4/ Quel est votre qualité de vie ?</h2>
-      <label><input type="checkbox" value="Tout va bien"> Tout va bien </label>
-      <label><input type="checkbox" value="Restriction sociale"> Restriction de la vie sociale </label>
-      <label><input type="checkbox" value="Souffrance psychologique"> Souffrance psychologique </label>
-      <label><input type="checkbox" value="Fatigue, épuisement"> Fatigue, épuisement </label>
-      <label><input type="checkbox" value="Réstriction professionnelle"> Réduction de la vie professionnelle </label>
-      <label><input type="checkbox" value="Coûts financiers"> Coûts financiers importants </label>
-      <label><input type="checkbox" value="Impact négatif sur la fratrie"> Impact négatif sur la fratrie </label>
-      <label><input type="checkbox" value="Conflics familiaux"> Conflics familiaux </label>
-      <label><input type="checkbox" value="Maladie ou difficulté pour ..."> Maladie ou difficulté pour ... </label>
-      <label><input type="checkbox" value="Eloignement de la personne"> Eloignement de la personne </label>
+      <label><input type="checkbox" name="qualite_vie[]" value="Tout va bien"> Tout va bien </label>
+      <label><input type="checkbox" name="qualite_vie[]" value="Restriction sociale"> Restriction de la vie sociale </label>
+      <label><input type="checkbox" name="qualite_vie[]" value="Souffrance psychologique"> Souffrance psychologique </label>
+      <label><input type="checkbox" name="qualite_vie[]" value="Fatigue"> Fatigue, épuisement </label>
+      <label><input type="checkbox" name="qualite_vie[]" value="Réstriction professionnelle"> Réduction de la vie professionnelle </label>
+      <label><input type="checkbox" name="qualite_vie[]" value="Coûts financiers"> Coûts financiers importants </label>
+      <label><input type="checkbox" name="qualite_vie[]" value="Impact négatif sur la fratrie"> Impact négatif sur la fratrie </label>
+      <label><input type="checkbox" name="qualite_vie[]" value="Conflics familiaux"> Conflics familiaux </label>
+      <label><input type="checkbox" name="qualite_vie[]" value="Maladie ou difficulté pour ..."> Maladie ou difficulté pour ... </label>
+      <label><input type="checkbox" name="qualite_vie[]" value="Eloignement de la personne"> Eloignement de la personne </label>
     </div>
 
 

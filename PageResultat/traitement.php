@@ -17,12 +17,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $cdaph = isset($_POST['cdaph']) ? $_POST['cdaph'] : NULL;
         $lieu_de_vie = isset($_POST['lieu_vie']) ? $_POST['lieu_vie'] : NULL;
         $activite = isset($_POST['activite']) ? $_POST['activite'] : NULL;
-
+        $qualite_vie = isset($_POST['qualite_vie']) ? implode(", ", $_POST['qualite_vie']) : NULL;
         $soutien = isset($_POST['soutien']) ? $_POST['soutien'] : NULL;
 
         $stmt = $db->prepare("INSERT INTO resultats (id, email, region, handicap, cdaph, lieu_de_vie, activite, qualite_vie, soutien) 
                               VALUES (:id_utilisateur, :email_utilisateur, :region, :handicap, :cdaph, :lieu_de_vie, :activite, :qualite_vie, :soutien)");
 
+        $stmt->bindParam(':id_utilisateur', $id_utilisateur);
+        $stmt->bindParam(':email_utilisateur', $email_utilisateur);
         $stmt->bindParam(':region', $region);
         $stmt->bindParam(':handicap', $handicap);
         $stmt->bindParam(':cdaph', $cdaph);
