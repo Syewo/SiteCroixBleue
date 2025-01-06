@@ -2,6 +2,14 @@
 session_start();
 include("../php/config.php");
 
+if (!isset($_SESSION['email'])) {
+    header('Location: ../PageInscription/connexion.php');
+    exit();
+}
+
+$id_utilisateur = $_SESSION['id'];
+$email_utilisateur = $_SESSION['email'];
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         $region = isset($_POST['region']) ? $_POST['region'] : NULL;
@@ -9,11 +17,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $cdaph = isset($_POST['cdaph']) ? $_POST['cdaph'] : NULL;
         $lieu_de_vie = isset($_POST['lieu_vie']) ? $_POST['lieu_vie'] : NULL;
         $activite = isset($_POST['activite']) ? $_POST['activite'] : NULL;
-        $qualite_vie = isset($_POST['qualite_vie']) ? implode(", ", $_POST['qualite_vie']) : NULL;
+
         $soutien = isset($_POST['soutien']) ? $_POST['soutien'] : NULL;
 
-        $stmt = $db->prepare("INSERT INTO résultats (departement, handicap, cdaph, lieu_de_vie, activite, qualite_vie, soutien) 
-                              VALUES (:region, :handicap, :cdaph, :lieu_de_vie, :activite, :qualite_vie, :soutien)");
+        $stmt = $db->prepare("INSERT INTO resultats (id, email, region, handicap, cdaph, lieu_de_vie, activite, qualite_vie, soutien) 
+                              VALUES (:id_utilisateur, :email_utilisateur, :region, :handicap, :cdaph, :lieu_de_vie, :activite, :qualite_vie, :soutien)");
 
         $stmt->bindParam(':region', $region);
         $stmt->bindParam(':handicap', $handicap);
@@ -25,12 +33,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $stmt->execute();
 
-        header("Location: ../PageInscription/success.php");
+        header("Location: ../PageAccueil/accueil.html");
         exit();
     } catch (PDOException $e) {
-        echo "Erreur lors de l'enregistrement : " . $e->getMessage();
+        echo "Erreur : " . $e->getMessage();
     }
 } else {
     echo "Méthode non autorisée.";
 }
-?>
