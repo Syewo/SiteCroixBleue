@@ -23,11 +23,12 @@
                 $stmt->execute();
                 $utilisateur = $stmt->fetch(PDO::FETCH_ASSOC);
                 if ($utilisateur && password_verify($motdepasse, $utilisateur['motdepasse'])) {
-                    $_SESSION['email'] = $utilisateur['id'];
+                    $_SESSION['id'] = $utilisateur['id'];
                     $_SESSION['nom'] = $utilisateur['nom'];
                     $_SESSION['prenom'] = $utilisateur['prenom'];
                     $_SESSION['email'] = $utilisateur['email'];
                     header('Location: ../PageAccueil/accueil.html');
+                    exit();
                 } else {
                     echo "<div class='message'>
                            <p>Email ou Mot de passe invalide</p>

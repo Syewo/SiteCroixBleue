@@ -4,6 +4,20 @@
     include("../php/config.php");
     if(!isset($_SESSION["email"])){
         header("location: ../PageInscription/connexion.php");
+        exit();
+    }
+
+    $id_utilisateur = $_SESSION["id"];
+
+    $stmt = $db->prepare("SELECT * FROM resultats WHERE id = :id_utilisateur");
+    $stmt->bindParam(':id_utilisateur', $id_utilisateur);
+    $stmt->execute();
+    $result = $stmt->fetch();
+
+    if ($result) {
+        echo "<h1>Vous avez déjà complété cette enquête.</h1>";
+        echo "<p>Merci d'avoir pris le temps de répondre à notre questionnaire.</p>";
+        exit();
     }
 ?>
 
@@ -93,8 +107,8 @@
       <h2>5/ Avez-vous besoin de soutien ?</h2>
       <label><input type="radio" name="soutien" value="Autonome"> Je suis totalement autonome</label>
       <label><input type="radio" name="soutien" value="Soutien partiel"> Un soutien à l'autonomie pour le logement, l'accès à la santé, les loisirs, les démarches administratives</label>
-      <label><input type="radio" name="soutien" value="Aide totale"> Une aide pour tous les actes de la vie quotidienne et la précence d'une tierce personne 24 heures sur 24</label>
-      <label><input type="radio" name="soutien" value="Intervention quotidienne "> Des interventions et stimulations ponctuelles mais quotidiennes (toilette, sorties, repas, communication..)</label>
+          <label><input type="radio" name="soutien" value="Aide totale"> Une aide pour tous les actes de la vie quotidienne et la précence d'une tierce personne 24 heures sur 24</label>
+      <label><input type="radio" name="soutien" value="Intervention quotidienne"> Des interventions et stimulations ponctuelles mais quotidiennes (toilette, sorties, repas, communication..)</label>
     </div>
 
     <button type="submit">Envoyer</button>
