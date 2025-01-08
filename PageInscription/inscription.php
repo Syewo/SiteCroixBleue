@@ -9,10 +9,10 @@
     <header>
         <img src="../images/logo.png" alt="Logo La Croix Bleue" class="logo">
         <nav class="menu">
-            <button class="menu-bouton"><a href="../PageAccueil/accueil.html">Accueil</a></button>
+            <button class="menu-bouton"><a href="../PageAccueil/accueil.php">Accueil</a></button>
             <button class="menu-bouton"><a href="../PageActualites/actualites.html">Actualités</a></button>
             <button class="menu-bouton"><a href="../PageLiberateur/liberateur.html">Liberateur</a></button>
-            <button class="menu-bouton special"><a href="inscription.php">Inscription</a></button>
+            <button class="menu-bouton special"><a href="oldInscription.html">Inscription</a></button>
             <button class="menu-bouton">Notre activité</button>
             <button class="menu-bouton">Nous soutenir</button>
         </nav>
@@ -22,10 +22,10 @@
         </div>
 
         <div class="menu-hamburger" id="menu-hamburger">
-            <button class="menu-bouton"><a href="../PageAccueil/accueil.html">Accueil</a></button>
+            <button class="menu-bouton"><a href="../PageAccueil/accueil.php">Accueil</a></button>
             <button class="menu-bouton"><a href="../PageActualites/actualites.html">Actualités</a></button>
             <button class="menu-bouton"><a href="../PageLiberateur/liberateur.html">Liberateur</a></button>
-            <button class="menu-bouton special"><a href="inscription.php">Inscription</a></button>
+            <button class="menu-bouton special"><a href="oldInscription.html">Inscription</a></button>
             <button class="menu-bouton">Notre activité</button>
             <button class="menu-bouton">Nous soutenir</button>
         </div>
@@ -56,8 +56,8 @@
                     else{
                         $motdepasse_hache = password_hash($motdepasse, PASSWORD_DEFAULT);
 
-                        $query = $db->prepare("INSERT INTO identifiants (email, motdepasse, nom, prenom, admin) VALUES (?, ?, ?, ?, ?)");
-                        $query->execute([$email, $motdepasse_hache, $nom, $prenom, 0]);
+                        $query = $db->prepare("INSERT INTO identifiants (email, motdepasse, nom, prenom) VALUES (?, ?, ?, ?)");
+                        $query->execute([$email, $motdepasse_hache, $nom, $prenom]);
 
                         echo "<div class='message'>
                                 <p>Enregistrement effectué !</p>

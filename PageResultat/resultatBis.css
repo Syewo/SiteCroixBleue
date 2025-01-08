@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #444;
+}
+
+.chart-container {
+    width: 80%; /* Limite la largeur totale de chaque conteneur de graphique */
+    max-width: 70vh; /* Taille maximale pour éviter que les graphiques ne grandissent trop */
+    height: 50vh; /* Hauteur fixe pour chaque graphique */
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+    max-width: 100%; /* Empêche le dépassement de la largeur du conteneur */
+    max-height: 90%; /* Empêche le dépassement de la hauteur définie */
+}
