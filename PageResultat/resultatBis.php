@@ -62,7 +62,10 @@
                 activites[entry.activite] = (activites[entry.activite] || 0) + 1;
 
                 // Comptage par qualité de vie
-                qualiteVie[entry.qualite_vie] = (qualiteVie[entry.qualite_vie] || 0) + 1;
+                entry.qualite_vie.split(',').forEach(choice => {
+                    const trimmedChoice = choice.trim(); // Supprime les espaces inutiles
+                    qualiteVie[trimmedChoice] = (qualiteVie[trimmedChoice] || 0) + 1;
+                });
 
                 // Comptage par soutien
                 soutien[entry.soutien] = (soutien[entry.soutien] || 0) + 1;
@@ -134,7 +137,7 @@
                 document.getElementById('qualiteVieChart').getContext('2d'),
                 Object.keys(qualiteVie),
                 Object.values(qualiteVie),
-                'pie',
+                'bar',
                 "Répartition de la qualité de vie"
             );
 
