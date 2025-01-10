@@ -1,0 +1,122 @@
+@font-face {
+    font-family: rubik;
+    src: url("../polices/Rubik/Rubik-VariableFont_wght.ttf");
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    max-width: 250px;
+    color: black;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+
+#inscriptionForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.email-input, .password-input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.email-input:focus, .password-input:focus {
+    border-color: #d86c5c;
+}
+
+.subscribe-button {
+    padding: 10px 20px;
+    background-color: #d86c5c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.subscribe-button:hover {
+    background-color: #dc8878;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #d86c5c;
+    color: black;
+    font-family: rubik;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+
+#date{
+    padding-top: 120px;
+}
+
+.footer-logo {
+    width: 60px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: black;
+}
+.footer-section{
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+
+
+.email-input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.subscribe-button {
+    padding: 8px 15px;
+    background-color: #d86c5c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: black;
+}
+
+.subscribe-button:hover {
+    background-color: #dc8878;
+}
+
+
+.search-container {
+    text-align: right;
+}
+
+.footer-logo {
+    width: 250px;
+    height: auto;
+}
