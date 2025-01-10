@@ -10,6 +10,30 @@
     <title>Connexion</title>
 </head>
 <body>
+<header>
+    <img src="../images/logo.png" alt="Logo La Croix Bleue" class="logo">
+    <nav class="menu">
+        <button class="menu-bouton"><a href="../PageAccueil/accueil.html">Accueil</a></button>
+        <button class="menu-bouton"><a href="../PageActualites/actualites.html">Actualités</a></button>
+        <button class="menu-bouton"><a href="../PageLiberateur/liberateur.html">Liberateur</a></button>
+        <button class="menu-bouton special"><a href="connexion.php">Connexion</a></button>
+        <button class="menu-bouton">Notre activité</button>
+        <button class="menu-bouton">Nous soutenir</button>
+    </nav>
+
+    <div class="hamburger-menu" id="hamburger-menu" onclick="toggleMenu()">
+        &#9776;
+    </div>
+
+    <div class="menu-hamburger" id="menu-hamburger">
+        <button class="menu-bouton"><a href="../PageAccueil/accueil.html">Accueil</a></button>
+        <button class="menu-bouton"><a href="../PageActualites/actualites.html">Actualités</a></button>
+        <button class="menu-bouton"><a href="../PageLiberateur/liberateur.html">Liberateur</a></button>
+        <button class="menu-bouton special"><a href="connexion.php">Connexion</a></button>
+        <button class="menu-bouton">Notre activité</button>
+        <button class="menu-bouton">Nous soutenir</button>
+    </div>
+</header>
   <div class="container">
     <div class="box form-box">
         <?php
