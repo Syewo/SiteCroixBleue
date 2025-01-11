@@ -70,40 +70,35 @@ fetch('get_data.php')
             document.getElementById('regionChart').getContext('2d'),
             Object.keys(regions),
             Object.values(regions),
-            'bar',
-            "Nombre d'habitants par région"
+            'bar'
         );
 
         createChart(
             document.getElementById('lieuDeVieChart').getContext('2d'),
             Object.keys(lieuDeVie),
             Object.values(lieuDeVie),
-            'pie',
-            "Répartition des lieux de vie"
+            'pie'
         );
 
         createChart(
             document.getElementById('activiteChart').getContext('2d'),
             Object.keys(activites),
             Object.values(activites),
-            'bar',
-            "Répartition des activités"
+            'bar'
         );
 
         createChart(
             document.getElementById('qualiteVieChart').getContext('2d'),
             Object.keys(qualiteVie),
             Object.values(qualiteVie),
-            'bar',
-            "Répartition de la qualité de vie"
+            'bar'
         );
 
         createChart(
             document.getElementById('soutienChart').getContext('2d'),
             Object.keys(soutien),
             Object.values(soutien),
-            'pie',
-            "Répartition des besoins de soutien"
+            'pie'
         );
     })
     .catch(error => console.error('Erreur lors de la récupération des données :', error));

@@ -69,7 +69,7 @@
 
 <!-- Graphique: Lieu de vie -->
 <div class="chart-container">
-    <h2>Répartition des lieux de vie</h2>
+    <h2>Votre lieu de vie correspond-il a votre choix ?</h2>
     <canvas id="lieuDeVieChart"></canvas>
 </div>
 
