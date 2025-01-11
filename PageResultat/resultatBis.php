@@ -37,10 +37,10 @@
     <nav class="menu">
         <button class="menu-bouton"><a href="../PageAccueil/accueil.html">Accueil</a></button>
         <button class="menu-bouton"><a href="../PageActualites/actualites.html">Actualités</a></button>
-        <button class="menu-bouton special"><a href="../PageLiberateur/liberateur.html">Liberateur</a></button>
+        <button class="menu-bouton"><a href="../PageLiberateur/liberateur.html">Liberateur</a></button>
         <button class="menu-bouton"><a href="../PageInscription/connexion.php">Connexion</a></button>
         <button class="menu-bouton"><a href="../PageEnquete/enquete.php">Enquete</a></button>
-        <button class="menu-bouton"><a href="resultatBis.php">Resultats</a></button>
+        <button class="menu-bouton special"><a href="resultatBis.php">Resultats</a></button>
         <button class="menu-bouton">Nous soutenir</button>
     </nav>
 
@@ -51,10 +51,10 @@
     <div class="menu-hamburger" id="menu-hamburger">
         <button class="menu-bouton"><a href="../PageAccueil/accueil.html">Accueil</a></button>
         <button class="menu-bouton"><a href="../PageActualites/actualites.html">Actualités</a></button>
-        <button class="menu-bouton special"><a href="../PageLiberateur/liberateur.html">Liberateur</a></button>
+        <button class="menu-bouton"><a href="../PageLiberateur/liberateur.html">Liberateur</a></button>
         <button class="menu-bouton"><a href="../PageInscription/connexion.php">Connexion</a></button>
         <button class="menu-bouton"><a href="../PageEnquete/enquete.php">Enquete</a></button>
-        <button class="menu-bouton"><a href="resultatBis.php">Resultats</a></button>
+        <button class="menu-bouton special"><a href="resultatBis.php">Resultats</a></button>
         <button class="menu-bouton">Nous soutenir</button>
     </div>
 </header>
