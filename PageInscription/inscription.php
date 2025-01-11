@@ -14,7 +14,7 @@
             <button class="menu-bouton"><a href="../PageLiberateur/liberateur.html">Liberateur</a></button>
             <button class="menu-bouton special"><a href="connexion.php">Connexion</a></button>
             <button class="menu-bouton"><a href="../PageEnquete/enquete.php">Enquete</a></button>
-            <button class="menu-bouton"><a href="../PageResultat/resultatBis.php">Resultats</a></button>
+            <button class="menu-bouton"><a href="../PageResultat/resultat.php">Resultats</a></button>
             <button class="menu-bouton">Nous soutenir</button>
         </nav>
 
@@ -28,7 +28,7 @@
             <button class="menu-bouton"><a href="../PageLiberateur/liberateur.html">Liberateur</a></button>
             <button class="menu-bouton special"><a href="connexion.php">Connexion</a></button>
             <button class="menu-bouton"><a href="../PageEnquete/enquete.php">Enquete</a></button>
-            <button class="menu-bouton"><a href="../PageResultat/resultatBis.php">Resultats</a></button>
+            <button class="menu-bouton"><a href="../PageResultat/resultat.php">Resultats</a></button>
             <button class="menu-bouton">Nous soutenir</button>
         </div>
     </header>

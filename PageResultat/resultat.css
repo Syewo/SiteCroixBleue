@@ -1,0 +1,186 @@
+@font-face {
+    font-family: rubik;
+    src: url("../polices/Rubik/Rubik-VariableFont_wght.ttf");
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+    justify-content: space-between;
+
+}
+
+
+.hamburger-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-hamburger {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-hamburger button {
+    width: 100%;
+    padding: 10px;
+    background-color:transparent;
+    border: none;
+    color: #0a6ad9;
+    text-align: center;
+}
+
+.menu button{
+    color: #0a6ad9;
+}
+
+
+.logo {
+    height: 200px;
+    width: 350px;
+    margin-left: 5%;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+
+.menu-bouton {
+    background-color: transparent;
+    color: #333;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    margin-right: 45px;
+}
+
+
+.menu-bouton.special {
+    background-color: #d86c5c;
+    color: white;
+    border-radius: 15px;
+}
+.menu-bouton.special a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+body {
+    font-family: Rubik;
+    margin: 20px;
+    background-color: black;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #0a6ad9;
+    margin-bottom: 20px; /* Augmentez la marge inférieure */
+}
+
+h1 {
+    font-size: 2em; /* Ajustez la taille selon vos préférences */
+}
+h2 {
+    font-size: 1.5em; /* Taille légèrement plus petite que h1 */
+}
+
+div {
+    width: 80%; /* Limite la largeur totale de chaque conteneur de graphique */
+    max-width: 70vh; /* Taille maximale pour éviter que les graphiques ne grandissent trop */
+    height: 50vh; /* Hauteur fixe pour chaque graphique */
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container h2 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+/* Graphiques */
+svg {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Axes */
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #ddd;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-size: 12px;
+    fill: #555;
+}
+
+/* Barres */
+.bar {
+    fill: #69b3a2;
+    transition: fill 0.3s, transform 0.2s;
+}
+
+.bar:hover {
+    fill: #2c3e50;
+    transform: scale(1.05);
+}
+
+/* Légendes des graphiques en secteurs */
+.pie-legend {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.pie-legend li {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.pie-legend span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    border-radius: 2px;
+}
