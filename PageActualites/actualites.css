@@ -115,7 +115,6 @@ header {
 
 #carouselActualites img {
     height: 50vh;
-    object-fit: cover;
 }
 
 .carousel-caption h5 {
