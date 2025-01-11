@@ -2,20 +2,20 @@
     session_start();
 
     include("../php/config.php");
+
     if (!isset($_SESSION["email"])) {
-        header("location: ../PageInscription/connexion.php");
+        echo "<h1>Accès interdit : Vous devez être connecté pour voir les résultats.</h1>";
         exit();
     }
 
     $id_utilisateur = $_SESSION["id"];
-
-    $stmt = $db->prepare("SELECT * FROM identifiants WHERE admin != null");
-    $stmt->bindParam(':admin', $id_utilisateur);
+    $stmt = $db->prepare("SELECT admin FROM identifiants WHERE id = :id_utilisateur");
+    $stmt->bindParam(':id_utilisateur', $id_utilisateur);
     $stmt->execute();
     $result = $stmt->fetch();
 
-    if ($result) {
-        echo "<h1>Vous devez être un administrateur pour accéder aux résultats.</h1>";
+    if (!$result || $result['admin'] != 1) {
+        echo "<h1>Accès interdit : Vous devez être un administrateur pour voir les résultats.</h1>";
         exit();
     }
 ?>
