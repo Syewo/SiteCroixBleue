@@ -1,14 +1,99 @@
+@font-face {
+    font-family: rubik;
+    src: url("../polices/Rubik/Rubik-VariableFont_wght.ttf");
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+    justify-content: space-between;
+
+}
+
+
+.hamburger-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-hamburger {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-hamburger button {
+    width: 100%;
+    padding: 10px;
+    background-color:transparent;
+    border: none;
+    color: #0a6ad9;
+    text-align: center;
+}
+
+.menu button{
+    color: #0a6ad9;
+}
+
+
+.logo {
+    height: 200px;
+    width: 350px;
+    margin-left: 5%;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+
+.menu-bouton {
+    background-color: transparent;
+    color: #333;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    margin-right: 45px;
+}
+
+
+.menu-bouton.special {
+    background-color: #d86c5c;
+    color: white;
+    border-radius: 15px;
+}
+.menu-bouton.special a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: Rubik;
     margin: 20px;
-    background-color: #f9f9f9;
+    background-color: black;
     color: #333;
     line-height: 1.6;
 }
 
 h1, h2 {
     text-align: center;
-    color: #444;
+    color: #0a6ad9;
 }
 
 .chart-container {

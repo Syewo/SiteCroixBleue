@@ -17,7 +17,8 @@
         <button class="menu-bouton"><a href="../PageActualites/actualites.html">Actualités</a></button>
         <button class="menu-bouton"><a href="../PageLiberateur/liberateur.html">Liberateur</a></button>
         <button class="menu-bouton special"><a href="connexion.php">Connexion</a></button>
-        <button class="menu-bouton">Notre activité</button>
+        <button class="menu-bouton"><a href="../PageEnquete/enquete.php">Enquete</a></button>
+        <button class="menu-bouton"><a href="../PageResultat/resultatBis.php">Resultats</a></button>
         <button class="menu-bouton">Nous soutenir</button>
     </nav>
 
@@ -30,9 +31,11 @@
         <button class="menu-bouton"><a href="../PageActualites/actualites.html">Actualités</a></button>
         <button class="menu-bouton"><a href="../PageLiberateur/liberateur.html">Liberateur</a></button>
         <button class="menu-bouton special"><a href="connexion.php">Connexion</a></button>
-        <button class="menu-bouton">Notre activité</button>
+        <button class="menu-bouton"><a href="../PageEnquete/enquete.php">Enquete</a></button>
+        <button class="menu-bouton"><a href="../PageResultat/resultatBis.php">Resultats</a></button>
         <button class="menu-bouton">Nous soutenir</button>
     </div>
+
 </header>
   <div class="container">
     <div class="box form-box">
@@ -61,7 +64,7 @@
                 }
                 }else {
         ?>
-      <header>Connexion</header>
+        <header>Connexion</header>
       <form action="" method="post">
         <div class="field input">
           <label for="email">Email</label>

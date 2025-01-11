@@ -1,3 +1,26 @@
+<?php
+    session_start();
+
+    include("../php/config.php");
+    if (!isset($_SESSION["email"])) {
+        header("location: ../PageInscription/connexion.php");
+        exit();
+    }
+
+    $id_utilisateur = $_SESSION["id"];
+
+    $stmt = $db->prepare("SELECT * FROM identifiants WHERE admin != null");
+    $stmt->bindParam(':admin', $id_utilisateur);
+    $stmt->execute();
+    $result = $stmt->fetch();
+
+    if ($result) {
+        echo "<h1>Vous devez être un administrateur pour accéder aux résultats.</h1>";
+        exit();
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -8,6 +31,34 @@
     <link rel="stylesheet" href="resultatBis.css">
 </head>
 <body>
+
+<header>
+    <img src="../images/logo.png" alt="Logo La Croix Bleue" class="logo">
+    <nav class="menu">
+        <button class="menu-bouton"><a href="../PageAccueil/accueil.html">Accueil</a></button>
+        <button class="menu-bouton"><a href="../PageActualites/actualites.html">Actualités</a></button>
+        <button class="menu-bouton special"><a href="../PageLiberateur/liberateur.html">Liberateur</a></button>
+        <button class="menu-bouton"><a href="../PageInscription/connexion.php">Connexion</a></button>
+        <button class="menu-bouton"><a href="../PageEnquete/enquete.php">Enquete</a></button>
+        <button class="menu-bouton"><a href="resultatBis.php">Resultats</a></button>
+        <button class="menu-bouton">Nous soutenir</button>
+    </nav>
+
+    <div class="hamburger-menu" id="hamburger-menu" onclick="toggleMenu()">
+        &#9776;
+    </div>
+
+    <div class="menu-hamburger" id="menu-hamburger">
+        <button class="menu-bouton"><a href="../PageAccueil/accueil.html">Accueil</a></button>
+        <button class="menu-bouton"><a href="../PageActualites/actualites.html">Actualités</a></button>
+        <button class="menu-bouton special"><a href="../PageLiberateur/liberateur.html">Liberateur</a></button>
+        <button class="menu-bouton"><a href="../PageInscription/connexion.php">Connexion</a></button>
+        <button class="menu-bouton"><a href="../PageEnquete/enquete.php">Enquete</a></button>
+        <button class="menu-bouton"><a href="resultatBis.php">Resultats</a></button>
+        <button class="menu-bouton">Nous soutenir</button>
+    </div>
+</header>
+
 <h1>Résultats de l'Enquête</h1>
 
 <!-- Graphique: Nombre d'habitants par région -->
