@@ -25,7 +25,7 @@
                 <img src="../images/footer3.png" alt="footer-logo1">
                 <ul>
                     <li><a href="#">Annuaire</a></li>
-                    <li><a href="#">Centres & Campin</a></li>
+                    <li><a href="#">Centres & Camping</a></li>
                     <li><a href="#">Documents</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Mentions légales</a></li>
