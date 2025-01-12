@@ -17,11 +17,7 @@
     </div>
 </div>
 
-
-
 <div class="ligne"></div>
-
-
 
 <div id="carouselActualites" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
@@ -54,46 +50,67 @@
     </a>
 </div>
 
-
-
 <div class="ligne"></div>
 
-
-
-<div class="conteneur-fichiers">
+<div class="conteneur-fichiers" id="fichiersContainer">
     <div class="fichier">
         <h3>Titre de l'actualité 1</h3>
         <img src="../images/image_Actualites.png" alt="Logo PDF">
-        <h5>Résumé du fichier 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis risus eu nisi volutpat, a maximus nunc hendrerit. Quisque vitae dui id risus volutpat porttitor vitae a libero. Nulla semper finibus ante et sollicitudin. Donec posuere, augue convallis fringilla interdum, diam orci euismod lectus, a vestibulum nisi massa finibus felis. Pellentesque venenatis porttitor auctor. Nam eu neque vel dui tempor venenatis. Pellentesque in aliquet orci, ut bibendum massa. Etiam nisl odio, porttitor sed mi in, auctor efficitur ante. Nullam consectetur ornare purus, ac gravida tortor gravida sed. Aenean eget felis finibus turpis tincidunt efficitur nec vel leo. Donec maximus lacinia eros nec condimentum. Nullam semper sapien sed lacus convallis fringilla. Suspendisse vehicula est sed nisl finibus ullamcorper. Donec semper mattis mi nec posuere.</h5>
-        <h5>En savoir plus</h5>
+        <h5>Résumé de l'actualité 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis risus eu nisi volutpat, a maximus nunc hendrerit. Quisque vitae dui id risus volutpat porttitor vitae a libero. Nulla semper finibus ante et sollicitudin. Donec posuere, augue convallis fringilla interdum, diam orci euismod lectus, a vestibulum nisi massa finibus felis. Pellentesque venenatis porttitor auctor. Nam eu neque vel dui tempor venenatis. Pellentesque in aliquet orci, ut bibendum massa. Etiam nisl odio, porttitor sed mi in, auctor efficitur ante. Nullam consectetur ornare purus, ac gravida tortor gravida sed. Aenean eget felis finibus turpis tincidunt efficitur nec vel leo. Donec maximus lacinia eros nec condimentum. Nullam semper sapien sed lacus convallis fringilla. Suspendisse vehicula est sed nisl finibus ullamcorper. Donec semper mattis mi nec posuere.</h5>
+        <button class="bouton-plus">En savoir plus</button>
     </div>
     <div class="fichier">
         <h3>Titre de l'actualité 2</h3>
         <img src="../images/image_Actualites.png" alt="Logo PDF">
-        <h5>Résumé du fichier 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis risus eu nisi volutpat, a maximus nunc hendrerit. Quisque vitae dui id risus volutpat porttitor vitae a libero. Nulla semper finibus ante et sollicitudin. Donec posuere, augue convallis fringilla interdum, diam orci euismod lectus, a vestibulum nisi massa finibus felis. Pellentesque venenatis porttitor auctor. Nam eu neque vel dui tempor venenatis. Pellentesque in aliquet orci, ut bibendum massa. Etiam nisl odio, porttitor sed mi in, auctor efficitur ante. Nullam consectetur ornare purus, ac gravida tortor gravida sed. Aenean eget felis finibus turpis tincidunt efficitur nec vel leo. Donec maximus lacinia eros nec condimentum. Nullam semper sapien sed lacus convallis fringilla. Suspendisse vehicula est sed nisl finibus ullamcorper. Donec semper mattis mi nec posuere.</h5>
-        <h5>En savoir plus</h5>
+        <h5>Résumé de l'actualité 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis risus eu nisi volutpat, a maximus nunc hendrerit. Quisque vitae dui id risus volutpat porttitor vitae a libero. Nulla semper finibus ante et sollicitudin. Donec posuere, augue convallis fringilla interdum, diam orci euismod lectus, a vestibulum nisi massa finibus felis. Pellentesque venenatis porttitor auctor. Nam eu neque vel dui tempor venenatis. Pellentesque in aliquet orci, ut bibendum massa. Etiam nisl odio, porttitor sed mi in, auctor efficitur ante. Nullam consectetur ornare purus, ac gravida tortor gravida sed. Aenean eget felis finibus turpis tincidunt efficitur nec vel leo. Donec maximus lacinia eros nec condimentum. Nullam semper sapien sed lacus convallis fringilla. Suspendisse vehicula est sed nisl finibus ullamcorper. Donec semper mattis mi nec posuere.</h5>
+        <button class="bouton-plus">En savoir plus</button>
     </div>
     <div class="fichier">
         <h3>Titre de l'actualité 3</h3>
         <img src="../images/image_Actualites.png" alt="Logo PDF">
-        <h5>Résumé du fichier 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis risus eu nisi volutpat, a maximus nunc hendrerit. Quisque vitae dui id risus volutpat porttitor vitae a libero. Nulla semper finibus ante et sollicitudin. Donec posuere, augue convallis fringilla interdum, diam orci euismod lectus, a vestibulum nisi massa finibus felis. Pellentesque venenatis porttitor auctor. Nam eu neque vel dui tempor venenatis. Pellentesque in aliquet orci, ut bibendum massa. Etiam nisl odio, porttitor sed mi in, auctor efficitur ante. Nullam consectetur ornare purus, ac gravida tortor gravida sed. Aenean eget felis finibus turpis tincidunt efficitur nec vel leo. Donec maximus lacinia eros nec condimentum. Nullam semper sapien sed lacus convallis fringilla. Suspendisse vehicula est sed nisl finibus ullamcorper. Donec semper mattis mi nec posuere.</h5>
-        <h5>En savoir plus</h5>
+        <h5>Résumé de l'actualité 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis risus eu nisi volutpat, a maximus nunc hendrerit. Quisque vitae dui id risus volutpat porttitor vitae a libero. Nulla semper finibus ante et sollicitudin. Donec posuere, augue convallis fringilla interdum, diam orci euismod lectus, a vestibulum nisi massa finibus felis. Pellentesque venenatis porttitor auctor. Nam eu neque vel dui tempor venenatis. Pellentesque in aliquet orci, ut bibendum massa. Etiam nisl odio, porttitor sed mi in, auctor efficitur ante. Nullam consectetur ornare purus, ac gravida tortor gravida sed. Aenean eget felis finibus turpis tincidunt efficitur nec vel leo. Donec maximus lacinia eros nec condimentum. Nullam semper sapien sed lacus convallis fringilla. Suspendisse vehicula est sed nisl finibus ullamcorper. Donec semper mattis mi nec posuere.</h5>
+        <button class="bouton-plus">En savoir plus</button>
     </div>
+    <div class="fichier">
+        <h3>Titre de l'actualité 4</h3>
+        <img src="../images/image_Actualites.png" alt="Logo PDF">
+        <h5>Résumé de l'actualité 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis risus eu nisi volutpat, a maximus nunc hendrerit. Quisque vitae dui id risus volutpat porttitor vitae a libero. Nulla semper finibus ante et sollicitudin. Donec posuere, augue convallis fringilla interdum, diam orci euismod lectus, a vestibulum nisi massa finibus felis. Pellentesque venenatis porttitor auctor. Nam eu neque vel dui tempor venenatis. Pellentesque in aliquet orci, ut bibendum massa. Etiam nisl odio, porttitor sed mi in, auctor efficitur ante. Nullam consectetur ornare purus, ac gravida tortor gravida sed. Aenean eget felis finibus turpis tincidunt efficitur nec vel leo. Donec maximus lacinia eros nec condimentum. Nullam semper sapien sed lacus convallis fringilla. Suspendisse vehicula est sed nisl finibus ullamcorper. Donec semper mattis mi nec posuere.</h5>
+        <button class="bouton-plus">En savoir plus</button>
+    </div>
+    <div class="fichier">
+        <h3>Titre de l'actualité 5</h3>
+        <img src="../images/image_Actualites.png" alt="Logo PDF">
+        <h5>Résumé de l'actualité 5: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis risus eu nisi volutpat, a maximus nunc hendrerit. Quisque vitae dui id risus volutpat porttitor vitae a libero. Nulla semper finibus ante et sollicitudin. Donec posuere, augue convallis fringilla interdum, diam orci euismod lectus, a vestibulum nisi massa finibus felis. Pellentesque venenatis porttitor auctor. Nam eu neque vel dui tempor venenatis. Pellentesque in aliquet orci, ut bibendum massa. Etiam nisl odio, porttitor sed mi in, auctor efficitur ante. Nullam consectetur ornare purus, ac gravida tortor gravida sed. Aenean eget felis finibus turpis tincidunt efficitur nec vel leo. Donec maximus lacinia eros nec condimentum. Nullam semper sapien sed lacus convallis fringilla. Suspendisse vehicula est sed nisl finibus ullamcorper. Donec semper mattis mi nec posuere.</h5>
+        <button class="bouton-plus">En savoir plus</button>
+    </div>
+    <div class="fichier">
+        <h3>Titre de l'actualité 6</h3>
+        <img src="../images/image_Actualites.png" alt="Logo PDF">
+        <h5>Résumé de l'actualité 6: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis risus eu nisi volutpat, a maximus nunc hendrerit. Quisque vitae dui id risus volutpat porttitor vitae a libero. Nulla semper finibus ante et sollicitudin. Donec posuere, augue convallis fringilla interdum, diam orci euismod lectus, a vestibulum nisi massa finibus felis. Pellentesque venenatis porttitor auctor. Nam eu neque vel dui tempor venenatis. Pellentesque in aliquet orci, ut bibendum massa. Etiam nisl odio, porttitor sed mi in, auctor efficitur ante. Nullam consectetur ornare purus, ac gravida tortor gravida sed. Aenean eget felis finibus turpis tincidunt efficitur nec vel leo. Donec maximus lacinia eros nec condimentum. Nullam semper sapien sed lacus convallis fringilla. Suspendisse vehicula est sed nisl finibus ullamcorper. Donec semper mattis mi nec posuere.</h5>
+        <button class="bouton-plus">En savoir plus</button>
+    </div>
+    <div class="fichier">
+        <h3>Titre de l'actualité 7</h3>
+        <img src="../images/image_Actualites.png" alt="Logo PDF">
+        <h5>Résumé de l'actualité 7: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis risus eu nisi volutpat, a maximus nunc hendrerit. Quisque vitae dui id risus volutpat porttitor vitae a libero. Nulla semper finibus ante et sollicitudin. Donec posuere, augue convallis fringilla interdum, diam orci euismod lectus, a vestibulum nisi massa finibus felis. Pellentesque venenatis porttitor auctor. Nam eu neque vel dui tempor venenatis. Pellentesque in aliquet orci, ut bibendum massa. Etiam nisl odio, porttitor sed mi in, auctor efficitur ante. Nullam consectetur ornare purus, ac gravida tortor gravida sed. Aenean eget felis finibus turpis tincidunt efficitur nec vel leo. Donec maximus lacinia eros nec condimentum. Nullam semper sapien sed lacus convallis fringilla. Suspendisse vehicula est sed nisl finibus ullamcorper. Donec semper mattis mi nec posuere.</h5>
+        <button class="bouton-plus">En savoir plus</button>
+    </div>
+    <div class="fichier">
+        <h3>Titre de l'actualité 8</h3>
+        <img src="../images/image_Actualites.png" alt="Logo PDF">
+        <h5>Résumé de l'actualité 8: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis risus eu nisi volutpat, a maximus nunc hendrerit. Quisque vitae dui id risus volutpat porttitor vitae a libero. Nulla semper finibus ante et sollicitudin. Donec posuere, augue convallis fringilla interdum, diam orci euismod lectus, a vestibulum nisi massa finibus felis. Pellentesque venenatis porttitor auctor. Nam eu neque vel dui tempor venenatis. Pellentesque in aliquet orci, ut bibendum massa. Etiam nisl odio, porttitor sed mi in, auctor efficitur ante. Nullam consectetur ornare purus, ac gravida tortor gravida sed. Aenean eget felis finibus turpis tincidunt efficitur nec vel leo. Donec maximus lacinia eros nec condimentum. Nullam semper sapien sed lacus convallis fringilla. Suspendisse vehicula est sed nisl finibus ullamcorper. Donec semper mattis mi nec posuere.</h5>
+        <button class="bouton-plus">En savoir plus</button>
+    </div>
+    <div class="fichier">
+        <h3>Titre de l'actualité 9</h3>
+        <img src="../images/image_Actualites.png" alt="Logo PDF">
+        <h5>Résumé de l'actualité 9: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis risus eu nisi volutpat, a maximus nunc hendrerit. Quisque vitae dui id risus volutpat porttitor vitae a libero. Nulla semper finibus ante et sollicitudin. Donec posuere, augue convallis fringilla interdum, diam orci euismod lectus, a vestibulum nisi massa finibus felis. Pellentesque venenatis porttitor auctor. Nam eu neque vel dui tempor venenatis. Pellentesque in aliquet orci, ut bibendum massa. Etiam nisl odio, porttitor sed mi in, auctor efficitur ante. Nullam consectetur ornare purus, ac gravida tortor gravida sed. Aenean eget felis finibus turpis tincidunt efficitur nec vel leo. Donec maximus lacinia eros nec condimentum. Nullam semper sapien sed lacus convallis fringilla. Suspendisse vehicula est sed nisl finibus ullamcorper. Donec semper mattis mi nec posuere.</h5>
+        <button class="bouton-plus">En savoir plus</button>
+    </div>
+    <!-- Ajoutez les autres fiches ici -->
 </div>
 
-<nav aria-label="Page navigation">
-    <ul class="pagination justify-content-center mt-4">
-        <li class="page-item disabled">
-            <a class="page-link" href="#" tabindex="-1">Précédent</a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item">
-            <a class="page-link" href="#">Suivant</a>
-        </li>
-    </ul>
-</nav>
+<div id="pagination" class="pagination d-flex justify-content-center mt-4"></div>
 
 <?php require_once '../squelette/footer.php'; ?>
 
