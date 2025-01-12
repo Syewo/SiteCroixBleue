@@ -41,14 +41,26 @@ $result = $stmt->fetch();
 <h1>Résultats de l'Enquête</h1>
 
 <!-- Conteneurs pour les graphiques -->
-<div id="region" class="container"></div>
-<div id="lieuDeVie" class="container"></div>
-<div id="activite" class="container"></div>
-<div id="qualiteVie" class="container"></div>
-<div id="soutien" class="container"></div>
+<div class="container-graph">
+    <div id="region"></div>
+</div>
+<div class="container-graph">
+    <div id="lieuDeVie"></div>
+</div>
+<div class="container-graph">
+    <div id="activite"></div>
+</div>
+<div class="container-graph">
+    <div id="qualiteVie"></div>
+</div>
+<div class="container-graph">
+    <div id="soutien"></div>
+</div>
 
 <!-- Inclusion du fichier JavaScript -->
 <script src="resultat.js"></script>
 </body>
 </html>
-        <?php } ?>
+        <?php require_once '../squelette/footer.php';
+    }
+    ?>
