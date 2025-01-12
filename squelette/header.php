@@ -4,13 +4,13 @@
 <header>
     <img src="../images/logo.png" alt="Logo La Croix Bleue" class="logo">
     <nav class="menu">
-        <button class="menu-bouton"><a href="../PageAccueil/accueil.php">Accueil</a></button>
-        <button class="menu-bouton"><a href="../PageActualites/actualites.php">Actualités</a></button>
-        <button class="menu-bouton"><a href="../PageLiberateur/liberateur.php">Liberateur</a></button>
-        <button class="menu-bouton"><a href="../PageInscription/connexion.php">Connexion</a></button>
-        <button class="menu-bouton"><a href="../PageEnquete/enquete.php">Enquete</a></button>
-        <button class="menu-bouton"><a href="../PageResultat/resultat.php">Resultats</a></button>
-        <button class="menu-bouton special">Nous soutenir</button>
+        <button class="menu-bouton"><a href="/Sae/PageAccueil/accueil.php">Accueil</a></button>
+        <button class="menu-bouton"><a href="/Sae/PageActualites/actualites.php">Actualités</a></button>
+        <button class="menu-bouton"><a href="/Sae/PageLiberateur/liberateur.php">Liberateur</a></button>
+        <button class="menu-bouton"><a href="/Sae/PageInscription/connexion.php">Connexion</a></button>
+        <button class="menu-bouton"><a href="/Sae/PageEnquete/enquete.php">Enquete</a></button>
+        <button class="menu-bouton"><a href="/Sae/PageResultat/resultat.php">Resultats</a></button>
+        <button class="menu-bouton special"><a href="/Sae/PageSoutenir/soutenir.php">Nous soutenir</a></button>
     </nav>
 
     <div class="hamburger-menu" id="hamburger-menu" onclick="toggleMenu()">
@@ -18,12 +18,12 @@
     </div>
 
     <div class="menu-hamburger" id="menu-hamburger">
-        <button class="menu-bouton"><a href="../PageAccueil/accueil.php">Accueil</a></button>
-        <button class="menu-bouton"><a href="../PageActualites/actualites.php">Actualités</a></button>
-        <button class="menu-bouton"><a href="../PageLiberateur/liberateur.php">Liberateur</a></button>
-        <button class="menu-bouton special"><a href="connexion.php">Connexion</a></button>
-        <button class="menu-bouton"><a href="../PageEnquete/enquete.php">Enquete</a></button>
-        <button class="menu-bouton"><a href="../PageResultat/resultat.php">Resultats</a></button>
+        <button class="menu-bouton"><a href="/Sae/PageAccueil/accueil.php">Accueil</a></button>
+        <button class="menu-bouton"><a href="/Sae/PageActualites/actualites.php">Actualités</a></button>
+        <button class="menu-bouton"><a href="/Sae/PageLiberateur/liberateur.php">Liberateur</a></button>
+        <button class="menu-bouton special"><a href="/Sae/PageInscription/connexion.php">Connexion</a></button>
+        <button class="menu-bouton"><a href="/Sae/PageEnquete/enquete.php">Enquete</a></button>
+        <button class="menu-bouton"><a href="/Sae/PageResultat/resultat.php">Resultats</a></button>
         <button class="menu-bouton">Nous soutenir</button>
     </div>
 </header>
