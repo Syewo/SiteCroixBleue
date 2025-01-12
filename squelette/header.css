@@ -12,7 +12,7 @@ header {
     display: flex;
     align-items: center;
     padding: 10px 20px;
-    background-color: black;
+    background-color: white;
     justify-content: space-between;
 }
 
@@ -60,11 +60,11 @@ header {
 .menu-bouton {
     background-color: transparent;
     color: #333;
-    border: none;
+    border: 2px solid transparent;
     font-size: 20px;
     cursor: pointer;
     padding: 10px 15px;
-    border-radius: 5px;
+    border-radius: 15px;
     transition: background-color 0.3s ease;
     margin-top: 10px;
     margin-right: 45px;
@@ -81,10 +81,13 @@ header {
     color: white;
 }
 
+.menu-bouton a:hover{
+    text-decoration: none;
+}
 
 .menu-bouton:hover {
     transition-duration: 13s;
-    border: 1px solid #0a6ad9;
+    border: 2px solid #0a6ad9;
     border-radius: 15px;
 }
 
