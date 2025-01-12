@@ -2,7 +2,7 @@
 function searchTitles() {
     let input = document.getElementById('searchInput');
     let filter = input.value.toLowerCase();
-    let fiches = document.querySelectorAll('.fichiers');
+    let fiches = document.querySelectorAll('.fichier');
 
     fiches.forEach(fiche => {
         let title = fiche.querySelector('h3');
