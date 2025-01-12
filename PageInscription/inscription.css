@@ -45,7 +45,7 @@ body{
     margin-bottom: 10px;
     flex-direction: column;
 }
-.form-box form .saisie input{
+.form-box form .input input{
     height: 40px;
     width: 100%;
     font-size: 16px;
