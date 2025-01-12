@@ -144,10 +144,18 @@ fetch('get_data.php')
                 .style('padding', 0)
                 .style('margin-top', '10px');
 
-            Object.entries(data).forEach(([key, value]) => {
+            Object.entries(data).forEach(([key, value], index) => {
                 legend.append('li')
                     .text(`${key}: ${value} personnes`)
-                    .style('font-size', '14px');
+                    .style('font-size', '14px')
+                    .style('color', color(key)) // Applique la même couleur que sur le graphique
+                    .append('span') // Crée un petit carré de couleur pour la légende
+                    .style('display', 'inline-block')
+                    .style('width', '15px')
+                    .style('height', '15px')
+                    .style('background-color', color(key))
+                    .style('margin-right', '10px')
+                    .style('vertical-align', 'middle');
             });
         }
 

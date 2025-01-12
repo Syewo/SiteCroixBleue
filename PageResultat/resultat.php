@@ -42,19 +42,19 @@ $result = $stmt->fetch();
 
 <!-- Conteneurs pour les graphiques -->
 <div class="container-graph">
-    <div id="region"></div>
+    <div id="region" class = "graph"></div>
 </div>
 <div class="container-graph">
-    <div id="lieuDeVie"></div>
+    <div id="lieuDeVie" class = "graph"></div>
 </div>
 <div class="container-graph">
-    <div id="activite"></div>
+    <div id="activite" class = "graph"></div>
 </div>
 <div class="container-graph">
-    <div id="qualiteVie"></div>
+    <div id="qualiteVie" class = "graph"></div>
 </div>
 <div class="container-graph">
-    <div id="soutien"></div>
+    <div id="soutien" class = "graph"></div>
 </div>
 
 <!-- Inclusion du fichier JavaScript -->
