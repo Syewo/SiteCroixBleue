@@ -9,32 +9,7 @@
 </head>
 <body>
 <script src="liberateur.js"></script>
-<header>
-    <img src="../images/logo.png" alt="Logo La Croix Bleue" class="logo">
-    <nav class="menu">
-        <button class="menu-bouton"><a href="../PageAccueil/accueil.html">Accueil</a></button>
-        <button class="menu-bouton"><a href="../PageActualites/actualites.html">Actualités</a></button>
-        <button class="menu-bouton special"><a href="liberateur.html">Liberateur</a></button>
-        <button class="menu-bouton"><a href="../PageInscription/connexion.php">Connexion</a></button>
-        <button class="menu-bouton"><a href="../PageEnquete/enquete.php">Enquete</a></button>
-        <button class="menu-bouton"><a href="../PageResultat/resultat.php">Resultats</a></button>
-        <button class="menu-bouton">Nous soutenir</button>
-    </nav>
-
-    <div class="hamburger-menu" id="hamburger-menu" onclick="toggleMenu()">
-        &#9776;
-    </div>
-
-    <div class="menu-hamburger" id="menu-hamburger">
-        <button class="menu-bouton"><a href="../PageAccueil/accueil.html">Accueil</a></button>
-        <button class="menu-bouton"><a href="../PageActualites/actualites.html">Actualités</a></button>
-        <button class="menu-bouton special"><a href="liberateur.html">Liberateur</a></button>
-        <button class="menu-bouton"><a href="../PageInscription/connexion.php">Connexion</a></button>
-        <button class="menu-bouton"><a href="../PageEnquete/enquete.php">Enquete</a></button>
-        <button class="menu-bouton"><a href="../PageResultat/resultat.php">Resultats</a></button>
-        <button class="menu-bouton">Nous soutenir</button>
-    </div>
-</header>
+<?php require_once '../squelette/header.php'; ?>
 
 
 <div class="haut">
@@ -196,30 +171,7 @@
             </ul>
         </nav>
 
-        <footer>
-            <div class="footer-section">
-                <img src="../images/logo.png" alt="Logo La Croix Bleue" class="footer-logo">
-                <p>123 Rue de l'Association, 75000 Paris</p>
-                <p>Tel: 01 23 45 67 89</p>
-                <p>Email: contact@croixbleue.fr</p>
-                <p id="date">© 2005-2024 La Croix Bleue</p>
-            </div>
-            <div class="footer-section">
-                <p><a href="#">Association</a></p>
-                <p><a href="#">Accueil siège</a></p>
-                <p><a href="#">Historiques</a></p>
-                <p><a href="#">Liens utiles</a></p>
-            </div>
-            <div class="footer-section">
-                <p><a href="#">Annuaire</a></p>
-                <p><a href="#">Centres</a></p>
-                <p><a href="#">Documents</a></p>
-                <p><a href="#">Contact</a></p>
-                <p><a href="#">Crédit</a></p>
-            </div>
-
-
-        </footer>
+        <?php require_once '../squelette/footer.php'; ?>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

@@ -30,11 +30,12 @@ fetch('get_data.php')
 
         // Fonction pour créer un graphique en barres avec D3.js
         function createBarChart(selector, data, title) {
-            const margin = { top: 40, right: 20, bottom: 50, left: 50 };
+            const margin = { top: 40, right: 20, bottom: 100, left: 50 };
             const width = 600 - margin.left - margin.right;
             const height = 400 - margin.top - margin.bottom;
 
             const svg = d3.select(selector)
+                .append('h2').text(title)
                 .append('svg')
                 .attr('width', width + margin.left + margin.right)
                 .attr('height', height + margin.top + margin.bottom)
@@ -60,7 +61,13 @@ fetch('get_data.php')
                 .attr('y', d => y(d[1]))
                 .attr('width', x.bandwidth())
                 .attr('height', d => height - y(d[1]))
-                .attr('fill', '#69b3a2');
+                .attr('fill', '#69b3a2')
+                .on('mouseover', function () {
+                    d3.select(this).attr('fill', '#ff7f0e'); // Change la couleur au survol
+                })
+                .on('mouseout', function () {
+                    d3.select(this).attr('fill', '#69b3a2'); // Restaure la couleur d'origine
+                });
 
             svg.append('g')
                 .attr('transform', `translate(0,${height})`)
@@ -72,12 +79,6 @@ fetch('get_data.php')
             svg.append('g')
                 .call(d3.axisLeft(y));
 
-            svg.append('text')
-                .attr('x', width / 2)
-                .attr('y', -margin.top / 2)
-                .attr('text-anchor', 'middle')
-                .style('font-size', '16px')
-                .text(title);
         }
 
         // Fonction pour créer un graphique en secteurs avec D3.js
@@ -87,6 +88,7 @@ fetch('get_data.php')
             const radius = Math.min(width, height) / 2;
 
             const svg = d3.select(selector)
+                .append('h2').text(title)
                 .append('svg')
                 .attr('width', width)
                 .attr('height', height)
@@ -111,14 +113,20 @@ fetch('get_data.php')
                 .attr('d', arc)
                 .attr('fill', d => color(d.data[0]))
                 .attr('stroke', 'white')
-                .style('stroke-width', '2px');
+                .style('stroke-width', '2px')
+                .on('mouseover', function () {
+                    d3.select(this)
+                        .transition()
+                        .duration(200)
+                        .attr('transform', 'scale(1.1)'); // Agrandit légèrement le segment
+                })
+                .on('mouseout', function () {
+                    d3.select(this)
+                        .transition()
+                        .duration(200)
+                        .attr('transform', 'scale(1)'); // Restaure la taille d'origine
+                });
 
-            svg.append('text')
-                .attr('x', 0)
-                .attr('y', -height / 2 + 20)
-                .attr('text-anchor', 'middle')
-                .style('font-size', '16px')
-                .text(title);
         }
 
         // Création des graphiques

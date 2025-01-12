@@ -28,43 +28,10 @@ if (!$result || $result['admin'] != 1) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Résultats de l'Enquête</title>
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <style>
-        .chart-container {
-            margin: 20px;
-        }
-        svg {
-            font-family: Arial, sans-serif;
-        }
-    </style>
     <link rel="stylesheet" href="resultat.css">
 </head>
 <body>
-<header>
-    <img src="../images/logo.png" alt="Logo La Croix Bleue" class="logo">
-    <nav class="menu">
-        <button class="menu-bouton"><a href="../PageAccueil/accueil.html">Accueil</a></button>
-        <button class="menu-bouton"><a href="../PageActualites/actualites.html">Actualités</a></button>
-        <button class="menu-bouton"><a href="../PageLiberateur/liberateur.html">Liberateur</a></button>
-        <button class="menu-bouton"><a href="../PageInscription/connexion.php">Connexion</a></button>
-        <button class="menu-bouton"><a href="../PageEnquete/enquete.php">Enquete</a></button>
-        <button class="menu-bouton special"><a href="resultat.php">Resultats</a></button>
-        <button class="menu-bouton">Nous soutenir</button>
-    </nav>
-
-    <div class="hamburger-menu" id="hamburger-menu" onclick="toggleMenu()">
-        &#9776;
-    </div>
-
-    <div class="menu-hamburger" id="menu-hamburger">
-        <button class="menu-bouton"><a href="../PageAccueil/accueil.html">Accueil</a></button>
-        <button class="menu-bouton"><a href="../PageActualites/actualites.html">Actualités</a></button>
-        <button class="menu-bouton"><a href="../PageLiberateur/liberateur.html">Liberateur</a></button>
-        <button class="menu-bouton"><a href="../PageInscription/connexion.php">Connexion</a></button>
-        <button class="menu-bouton"><a href="../PageEnquete/enquete.php">Enquete</a></button>
-        <button class="menu-bouton special"><a href="resultat.php">Resultats</a></button>
-        <button class="menu-bouton">Nous soutenir</button>
-    </div>
-</header>
+<?php require_once '../squelette/header.php'; ?>
 
 <h1>Résultats de l'Enquête</h1>
 

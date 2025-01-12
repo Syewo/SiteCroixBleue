@@ -6,32 +6,7 @@
     <title>Enregistrement</title>
 </head>
 <body>
-    <header>
-        <img src="../images/logo.png" alt="Logo La Croix Bleue" class="logo">
-        <nav class="menu">
-            <button class="menu-bouton"><a href="../PageAccueil/accueil.html">Accueil</a></button>
-            <button class="menu-bouton"><a href="../PageActualites/actualites.html">Actualités</a></button>
-            <button class="menu-bouton"><a href="../PageLiberateur/liberateur.html">Liberateur</a></button>
-            <button class="menu-bouton special"><a href="connexion.php">Connexion</a></button>
-            <button class="menu-bouton"><a href="../PageEnquete/enquete.php">Enquete</a></button>
-            <button class="menu-bouton"><a href="../PageResultat/resultat.php">Resultats</a></button>
-            <button class="menu-bouton">Nous soutenir</button>
-        </nav>
-
-        <div class="hamburger-menu" id="hamburger-menu" onclick="toggleMenu()">
-            &#9776;
-        </div>
-
-        <div class="menu-hamburger" id="menu-hamburger">
-            <button class="menu-bouton"><a href="../PageAccueil/accueil.html">Accueil</a></button>
-            <button class="menu-bouton"><a href="../PageActualites/actualites.html">Actualités</a></button>
-            <button class="menu-bouton"><a href="../PageLiberateur/liberateur.html">Liberateur</a></button>
-            <button class="menu-bouton special"><a href="connexion.php">Connexion</a></button>
-            <button class="menu-bouton"><a href="../PageEnquete/enquete.php">Enquete</a></button>
-            <button class="menu-bouton"><a href="../PageResultat/resultat.php">Resultats</a></button>
-            <button class="menu-bouton">Nous soutenir</button>
-        </div>
-    </header>
+    <?php require_once '../squelette/header.php'; ?>
 
     <div class="container">
         <div class="box form-box">
@@ -102,56 +77,7 @@
         </div>
     </div>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col">
-                    <img src="../images/footer1.png" alt="footer-logo1">
-                    <ul>
-                        <li>189 rue Belliard 75018 Paris</li>
-                        <li>Tel : 01.42.28.37.37</li>
-                        <li>cbleuesiege@gmail.com</li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <img src="../images/footer2.png" alt="footer-logo1">
-                    <ul>
-                        <li><a href="#">Association</a></li>
-                        <li><a href="#">Accueil Siège</a></li>
-                        <li><a href="#">Conseil Administration</a></li>
-                        <li><a href="#">Historique</a></li>
-                        <li><a href="#">Les objectifs</a></li>
-                        <li><a href="#">Liens Utiles</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <img src="../images/footer3.png" alt="footer-logo1">
-                    <ul>
-                        <li><a href="#">Annuaire</a></li>
-                        <li><a href="#">Centres & Campin</a></li>
-                        <li><a href="#">Documents</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Mentions légales</a></li>
-                        <li><a href="#">Crédit</a></li>
-                        <li><a href="#">Flux RSS</a></li>
-                        <li><a href="#">Espace membre</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <img src="../images/footer4.png" alt="footer-logo1">
-                    <h4>Newsletter</h4>
-                    <form>
-                        <i class="fa-regular fa-envelope"></i>
-                        <input type="email" placeholder="Entrer votre addresse Email">
-                        <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <p class="copyright-text">© 2005-2024 La Croix Bleue</p>
-        </div>
-    </footer>
+    <?php require_once '../squelette/footer.php'; ?>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>

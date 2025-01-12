@@ -15,8 +15,11 @@
     $result = $stmt->fetch();
 
     if ($result) {
-        echo "<h1>Vous avez déjà complété cette enquête.</h1>";
-        echo "<p>Merci d'avoir pris le temps de répondre à notre questionnaire.</p>";
+        echo "<div class='message'>
+                                <p>Cet adresse email est déjà utilisée, veuillez en saisir une autre</p>
+                              </div> <br>";
+        echo "<a href='javascript:self.history.back()'><button class='btn'>Retour</button>";
+        header('Location: ../PageInscription/inscription.php');
         exit();
     }
 ?>

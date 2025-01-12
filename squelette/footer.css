@@ -3,120 +3,97 @@
     src: url("../polices/Rubik/Rubik-VariableFont_wght.ttf");
 }
 
-.footer-section {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    flex: 1;
-    max-width: 250px;
-    color: black;
-    padding-top: 10px;
-    margin-left: 10px;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: rubik, serif;
 }
-
-
-#inscriptionForm {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-}
-
-.email-input, .password-input {
-    padding: 10px;
-    font-size: 16px;
-    width: 100%;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    outline: none;
-}
-
-.email-input:focus, .password-input:focus {
-    border-color: #d86c5c;
-}
-
-.subscribe-button {
-    padding: 10px 20px;
+.footer{
     background-color: #d86c5c;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: 100%;
+    padding: 70px 0;
 }
-
-.subscribe-button:hover {
-    background-color: #dc8878;
+.footer .container{
+    max-width: 1270px;
+    margin: auto;
 }
-
-
-footer {
+.footer .container .row{
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #d86c5c;
-    color: black;
-    font-family: rubik;
-    font-size: 20px;
     flex-wrap: wrap;
 }
-
-#date{
-    padding-top: 120px;
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
 }
-
-.footer-logo {
-    width: 60px;
-    height: auto;
+.footer .container ul {
+    list-style: none;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col ul li:not(:last-child){
     margin-bottom: 10px;
 }
-
-
-.footer-section a {
-    color: white;
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
     text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-section a:hover {
+    font-weight: 300;
     color: black;
+    display: block;
+    transition: all 0.3s ease;
 }
-.footer-section{
-    margin-right: 10%;
-    margin-left: 5%;
-}
-
-
-
-.email-input {
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.subscribe-button {
-    padding: 8px 15px;
-    background-color: #d86c5c;
+.footer-col ul li a:hover{
     color: white;
-    border: none;
-    border-radius: 5px;
+    padding-left: 10px;
+}
+.footer-col img{
+    width: 40%;
+    margin: 40px;
+}
+.footer-col form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+.footer-col form .fa-regular{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.footer-col form input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+}
+.footer-col form button{
+    background: transparent;
+    border: 0;
+    outline: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    color: black;
+}
+.footer-col form button .fa-solid{
+    font-size: 16px;
+}
+.footer-copyright{
+    margin-left: 50px;
 }
 
-.subscribe-button:hover {
-    background-color: #dc8878;
-}
+@media (max-width: 900px) {
+    footer {
+        display: block;
+    }
 
-
-.search-container {
-    text-align: right;
-}
-
-.footer-logo {
-    width: 250px;
-    height: auto;
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
