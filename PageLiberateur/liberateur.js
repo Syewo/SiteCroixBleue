@@ -1,4 +1,3 @@
-
 function searchTitles() {
     let input = document.getElementById('searchInput');
     let filter = input.value.toLowerCase();
@@ -12,15 +11,4 @@ function searchTitles() {
             fiche.style.display = 'none';
         }
     });
-}
-
-
-function toggleMenu() {
-    var menuHamburger = document.getElementById("menu-hamburger");
-
-    if (menuHamburger.style.display === "block") {
-        menuHamburger.style.display = "none";
-    } else {
-        menuHamburger.style.display = "block";
-    }
 }

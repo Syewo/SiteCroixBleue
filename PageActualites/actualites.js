@@ -14,17 +14,6 @@ function searchTitles() {
     });
 }
 
-
-function toggleMenu() {
-    var menuHamburger = document.getElementById("menu-hamburger");
-
-    if (menuHamburger.style.display === "block") {
-        menuHamburger.style.display = "none";
-    } else {
-        menuHamburger.style.display = "block";
-    }
-}
-
 document.addEventListener('DOMContentLoaded', () => {
     const itemsPerPage = 6; // 2 lignes de 3 éléments = 6 éléments par page
     const fiches = Array.from(document.querySelectorAll('.fichier'));

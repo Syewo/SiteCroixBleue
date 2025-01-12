@@ -4,7 +4,7 @@ session_start();
 include("../php/config.php");
 
 if (!isset($_SESSION["email"])) {
-    echo "<h1>Accès interdit : Vous devez être connecté pour voir les résultats.</h1>";
+    header('Location: ../PageInscription/connexion.php');
     exit();
 }
 
@@ -13,11 +13,6 @@ $stmt = $db->prepare("SELECT admin FROM identifiants WHERE id = :id_utilisateur"
 $stmt->bindParam(':id_utilisateur', $id_utilisateur);
 $stmt->execute();
 $result = $stmt->fetch();
-
-if (!$result || $result['admin'] != 1) {
-    echo "<h1>Accès interdit : Vous devez être un administrateur pour voir les résultats.</h1>";
-    exit();
-}
 ?>
 
 
@@ -31,8 +26,18 @@ if (!$result || $result['admin'] != 1) {
     <link rel="stylesheet" href="resultat.css">
 </head>
 <body>
-<?php require_once '../squelette/header.php'; ?>
-
+<?php require_once '../squelette/header.php';
+    if (!$result || $result['admin'] != 1) {
+        echo "<div class='container-message'>";
+        echo "<div class='message'>
+            <p>Accès interdit : Vous devez être un administrateur pour voir les résultats.</p>
+          </div> <br>";
+        echo "<a href='../PageAccueil/accueil.php'><button class='btn'>Retour à l'accueil</button></a>";
+        echo "</div>";
+        exit();
+    }
+    else {
+?>
 <h1>Résultats de l'Enquête</h1>
 
 <!-- Conteneurs pour les graphiques -->
@@ -46,3 +51,4 @@ if (!$result || $result['admin'] != 1) {
 <script src="resultat.js"></script>
 </body>
 </html>
+        <?php } ?>

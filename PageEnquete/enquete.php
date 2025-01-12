@@ -13,15 +13,6 @@
     $stmt->bindParam(':id_utilisateur', $id_utilisateur);
     $stmt->execute();
     $result = $stmt->fetch();
-
-    if ($result) {
-        echo "<div class='message'>
-                                <p>Cet adresse email est déjà utilisée, veuillez en saisir une autre</p>
-                              </div> <br>";
-        echo "<a href='javascript:self.history.back()'><button class='btn'>Retour</button>";
-        header('Location: ../PageInscription/inscription.php');
-        exit();
-    }
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +24,18 @@
   <link rel="stylesheet" href="enquete.css">
 </head>
 <body>
-<div class="container">
+<?php require_once '../squelette/header.php'; ?>
+<div class="container-questions">
+    <?php
+    if ($result) {
+        echo "<div class='message'>
+            <p>Vous avez déjà répondu à ce questionnaire. Merci pour votre participation.</p>
+          </div> <br>";
+        echo "<a href='../PageAccueil/accueil.php'><button class='btn'>Retour à l'accueil</button></a>";
+        exit();
+    }
+    else {
+    ?>
   <h1>Questionnaire</h1>
   <form method="POST" action="../PageResultat/traitement.php">
     <div class="question">
@@ -117,5 +119,8 @@
     <button type="submit">Envoyer</button>
   </form>
 </div>
+    <?php }
+        require_once '../squelette/footer.php';
+    ?>
 </body>
 </html>
