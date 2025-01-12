@@ -79,9 +79,19 @@ fetch('get_data.php')
             svg.append('g')
                 .call(d3.axisLeft(y));
 
+            // Ajouter la légende sous les barres
+            svg.selectAll('text.value')
+                .data(Object.entries(data))
+                .enter()
+                .append('text')
+                .attr('x', d => x(d[0]) + x.bandwidth() / 2)
+                .attr('y', d => y(d[1]) - 5)
+                .attr('text-anchor', 'middle')
+                .attr('class', 'value')
+                .text(d => d[1]);
         }
 
-        // Fonction pour créer un graphique en secteurs avec D3.js
+
         function createPieChart(selector, data, title) {
             const width = 400;
             const height = 400;
@@ -127,7 +137,29 @@ fetch('get_data.php')
                         .attr('transform', 'scale(1)'); // Restaure la taille d'origine
                 });
 
+            // Légende sous le graphique en secteurs
+            const legend = d3.select(selector)
+                .append('ul')
+                .style('list-style-type', 'none')
+                .style('padding', 0)
+                .style('margin-top', '10px');
+
+            Object.entries(data).forEach(([key, value], index) => {
+                legend.append('li')
+                    .text(`${key}: ${value} personnes`)
+                    .style('font-size', '14px')
+                    .style('color', color(key)) // Applique la même couleur que sur le graphique
+                    .append('span') // Crée un petit carré de couleur pour la légende
+                    .style('display', 'inline-block')
+                    .style('width', '15px')
+                    .style('height', '15px')
+                    .style('background-color', color(key))
+                    .style('margin-right', '10px')
+                    .style('vertical-align', 'middle');
+            });
         }
+
+
 
         // Création des graphiques
         createBarChart('#region', regions, 'Répartition par région');
