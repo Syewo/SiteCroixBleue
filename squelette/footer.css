@@ -13,11 +13,11 @@
     background-color: #e17e59;
     padding: 70px 0;
 }
-.footer .container{
+.footer .donation-conteneur{
     max-width: 1270px;
     margin: auto;
 }
-.footer .container .row{
+.footer .donation-conteneur .row{
     display: flex;
     flex-wrap: wrap;
 }
@@ -25,7 +25,7 @@
     width: 25%;
     padding: 0 15px;
 }
-.footer .container ul {
+.footer .donation-conteneur ul {
     list-style: none;
 }
 .footer-col h4{

@@ -14,7 +14,7 @@ body{
     font-family: rubik, serif;
 }
 
-.container{
+.container-login{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,7 +45,7 @@ body{
     margin-bottom: 10px;
     flex-direction: column;
 }
-.form-box form .input input{
+.form-box form .saisie input{
     height: 40px;
     width: 100%;
     font-size: 16px;

@@ -11,7 +11,7 @@
 </head>
 <body>
 <?php require_once '../squelette/header.php'; ?>
-  <div class="container">
+  <div class="container-login">
     <div class="box form-box">
         <?php
             include("../php/config.php");
