@@ -21,6 +21,13 @@ h1{
     color: #0a6ad9;
 }
 
+.carousel-caption h5 {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
 .conteneur-fichiers {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -239,6 +246,7 @@ footer {
     }
 }
 
+
 /* Responsive */
 @media (max-width: 768px) {
     #carouselActualites {
@@ -279,17 +287,4 @@ footer {
     .conteneur-fichiers {
         grid-template-columns: 1fr;
     }
-}
-
-.carousel-inner img {
-    max-width: 60%; /* Réduit encore la largeur de l'image à 60% du carrousel */
-    height: auto;
-    margin: 0 auto; /* Centre horizontalement l'image */
-}
-
-.carousel-inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black; /* Ajoute un fond noir pour contraster avec l'image */
 }

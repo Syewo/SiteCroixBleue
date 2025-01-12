@@ -19,39 +19,6 @@
 
 <div class="ligne"></div>
 
-<div id="carouselActualites" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="../images/image_Actualites.png" class="d-block w-100" alt="Image 1">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Titre de l'image 1</h5>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="../images/image_Actualites.png" class="d-block w-100" alt="Image 2">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Titre de l'image 2</h5>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="../images/image_Actualites.png" class="d-block w-100" alt="Image 3">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Titre de l'image 3</h5>
-            </div>
-        </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselActualites" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Précédent</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselActualites" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Suivant</span>
-    </a>
-</div>
-
-<div class="ligne"></div>
-
 <div class="conteneur-fichiers" id="fichiersContainer">
     <div class="fichier">
         <h3>Titre de l'actualité 1</h3>
