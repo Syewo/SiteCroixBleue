@@ -9,23 +9,29 @@ fetch('get_data.php')
         const soutien = {};
 
         data.forEach(entry => {
-            // Comptage par région
-            regions[entry.region] = (regions[entry.region] || 0) + 1;
-
-            // Comptage par lieu de vie
-            lieuDeVie[entry.lieu_de_vie] = (lieuDeVie[entry.lieu_de_vie] || 0) + 1;
-
-            // Comptage par activité
-            activites[entry.activite] = (activites[entry.activite] || 0) + 1;
-
-            // Comptage par qualité de vie
-            entry.qualite_vie.split(',').forEach(choice => {
-                const trimmedChoice = choice.trim(); // Supprime les espaces inutiles
-                qualiteVie[trimmedChoice] = (qualiteVie[trimmedChoice] || 0) + 1;
-            });
-
-            // Comptage par soutien
-            soutien[entry.soutien] = (soutien[entry.soutien] || 0) + 1;
+            if(entry.region !== null) {
+                // Comptage par région
+                regions[entry.region] = (regions[entry.region] || 0) + 1;
+            }
+            if(entry.lieu_de_vie !== null) {
+                // Comptage par lieu de vie
+                lieuDeVie[entry.lieu_de_vie] = (lieuDeVie[entry.lieu_de_vie] || 0) + 1;
+            }
+            if(entry.activite !== null) {
+                // Comptage par activité
+                activites[entry.activite] = (activites[entry.activite] || 0) + 1;
+            }
+            if(entry.qualite_vie !== null) {
+                // Comptage par qualité de vie
+                entry.qualite_vie.split(',').forEach(choice => {
+                    const trimmedChoice = choice.trim(); // Supprime les espaces inutiles
+                    qualiteVie[trimmedChoice] = (qualiteVie[trimmedChoice] || 0) + 1;
+                });
+            }
+            if(entry.soutien !== null) {
+                // Comptage par soutien
+                soutien[entry.soutien] = (soutien[entry.soutien] || 0) + 1;
+            }
         });
 
         // Fonction pour créer un graphique en barres avec D3.js
