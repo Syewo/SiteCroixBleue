@@ -16,19 +16,39 @@ header {
     justify-content: space-between;
 }
 
-.hamburger-menu {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    padding: 10px;
+.menu-hamburger {
+    position: fixed; /* Fixe le menu sur l'écran */
+    top: 0; /* Placé en haut de l'écran */
+    left: 0;
+    width: 100%; /* Prend toute la largeur */
+    background-color: white;
+    z-index: 1000; /* Priorité supérieure */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(-100%);
+    opacity: 0;
 }
 
-.menu-hamburger {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+.menu-hamburger.active {
+    transform: translateY(0); /* Affiche le menu */
+    opacity: 1;
 }
+
+/* Icône hamburger */
+.hamburger-menu {
+    display: none; /* Assurez-vous qu'il est visible */
+    font-size: 30px; /* Taille de l'icône */
+    cursor: pointer; /* Curseur interactif */
+    padding: 10px; /* Espace autour de l'icône */
+    position: absolute; /* Positionnez-le de manière absolue */
+    top: 10px; /* Distance du haut */
+    right: 20px; /* Distance de la droite */
+    z-index: 2000; /* Superpose le bouton au menu-hamburger */
+    background-color: white; /* Couleur de fond pour plus de visibilité (optionnel) */
+    border-radius: 50%; /* Bord arrondi (optionnel) */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre pour le style (optionnel) */
+}
+
+
 
 .menu-hamburger button {
     width: 100%;
@@ -97,7 +117,8 @@ header {
 }
 
 .navbar{
-    position: absolute;
+    position: relative; /* Crée un contexte de position pour le menu hamburger */
+    z-index: 999;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -162,6 +183,11 @@ header {
     height: auto;
 }
 
+.carousel {
+    position: relative; /* Ou absolute si nécessaire */
+    z-index: 500; /* Doit être inférieur au menu hamburger */
+}
+
 @media (max-width: 1000px) {
     .menu {
         display: none;
@@ -173,5 +199,73 @@ header {
 
     .menu-hamburger {
         display: block;
+    }
+}
+
+/* Réduction de la taille de la navbar pour les écrans entre 1000px et 3000px */
+@media (max-width: 3000px) and (min-width: 2000px) {
+    header {
+        padding: 5px 15px; /* Réduction des marges internes */
+    }
+
+    .navbar {
+        justify-content: space-between; /* Assure une bonne répartition des éléments */
+    }
+
+    .logo {
+        max-width: 150px; /* Réduit la taille du logo */
+        height: auto;
+    }
+
+    .menu {
+        gap: 10px; /* Réduit l'écart entre les éléments du menu */
+    }
+
+    .menu-bouton {
+        font-size: 16px; /* Réduit la taille du texte des boutons */
+        padding: 5px 10px; /* Diminue l'espace interne des boutons */
+    }
+
+    .menu-bouton.special {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    .navbar .nav-links ul li {
+        margin: 15px; /* Réduit les marges entre les liens */
+    }
+}
+
+/* Réduction supplémentaire pour les écrans entre 1000px et 2000px */
+@media (max-width: 2000px) and (min-width: 1000px) {
+    header {
+        padding: 5px 10px; /* Réduit encore les marges */
+    }
+
+    .logo {
+        max-width: 120px; /* Taille encore plus réduite du logo */
+        height: auto;
+    }
+
+    .menu {
+        gap: 5px; /* Réduction des écarts entre les éléments du menu */
+    }
+
+    .menu-bouton {
+        font-size: 14px; /* Texte des boutons encore plus petit */
+        padding: 5px 8px; /* Réduction des espaces internes */
+    }
+
+    .menu-bouton.special {
+        font-size: 14px; /* Taille cohérente pour les boutons spéciaux */
+        padding: 5px 8px;
+    }
+
+    .navbar .nav-links ul li {
+        margin: 10px; /* Réduction des marges autour des liens */
+    }
+
+    .navbar {
+        flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
     }
 }

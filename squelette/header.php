@@ -21,9 +21,9 @@
         <button class="menu-bouton"><a href="../PageAccueil/accueil.php">Accueil</a></button>
         <button class="menu-bouton"><a href="../PageActualites/actualites.php">Actualités</a></button>
         <button class="menu-bouton"><a href="../PageLiberateur/liberateur.php">Liberateur</a></button>
-        <button class="menu-bouton special"><a href="../PageInscription/connexion.php">Connexion</a></button>
+        <button class="menu-bouton"><a href="../PageInscription/connexion.php">Connexion</a></button>
         <button class="menu-bouton"><a href="../PageEnquete/enquete.php">Enquete</a></button>
         <button class="menu-bouton"><a href="../PageResultat/resultat.php">Resultats</a></button>
-        <button class="menu-bouton">Nous soutenir</button>
+        <button class="menu-bouton special"><a href="../PageSoutenir/soutenir.php">Nous soutenir</a></button>
     </div>
 </header>

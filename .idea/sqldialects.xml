@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/PageEnquete/enquete.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/PageInscription/connexion.php" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/PageInscription/inscription.php" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/PageResultat/get_data.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/PageResultat/resultat.php" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/PageResultat/traitement.php" dialect="GenericSQL" />
   </component>
 </project>

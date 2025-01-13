@@ -1,9 +1,4 @@
 function toggleMenu() {
-    var menuHamburger = document.getElementById("menu-hamburger");
-
-    if (menuHamburger.style.display === "block") {
-        menuHamburger.style.display = "none";
-    } else {
-        menuHamburger.style.display = "block";
-    }
+    const menuHamburger = document.getElementById("menu-hamburger");
+    menuHamburger.classList.toggle("active"); // Ajoute ou retire la classe active
 }
