@@ -169,8 +169,8 @@ fetch('get_data.php')
 
         // Création des graphiques
         createBarChart('#region', regions, 'Répartition par région');
-        createPieChart('#lieuDeVie', lieuDeVie, 'Répartition par lieu de vie');
-        createBarChart('#activite', activites, 'Répartition par activité');
+        createPieChart('#lieuDeVie', lieuDeVie, 'Consommation d\'alcool');
+        createBarChart('#activite', activites, 'Conséquences de l\'alcool');
         createBarChart('#qualiteVie', qualiteVie, 'Répartition par qualité de vie');
         createPieChart('#soutien', soutien, 'Répartition par soutien');
     })

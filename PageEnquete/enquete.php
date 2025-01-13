@@ -63,54 +63,54 @@
 
 
     <div class="question">
-      <h2>2/Etes-vous en situation de handicap ?</h2>
+      <h2>2/Buvez-vous régulièriement de l'alcool ?</h2>
       <label><input type="radio" name="handicap" value="Oui">Oui</label>
       <label><input type="radio" name="handicap" value="Non">Non</label>
-      <div><h2>2/a Si oui votre logement correspond-il a une orientation CDAPH ?</h2></div>
+      <div><h2>2/a Si oui essayez vous activement d'arreter de boire ?</h2></div>
       <label><input type="radio" name="cdaph" value="Oui">Oui</label>
-      <label><input type="radio" name="cdaph" value="Non">Non</label>
-      <div><h2>2/b Le lieu de vie correspond-il a votre choix ?</h2></div>
+      <label><input type="radio" name="cdaph" value="Non">Non !!</label>
+      <div><h2>2/b L'alcoolisme a-il des conséquences sur votre quotidien ?</h2></div>
       <label><input type="radio" name="lieu_vie" value="Oui">Oui</label>
-      <label><input type="radio" name="lieu_vie" value="Non">Non</label>
+      <label><input type="radio" name="lieu_vie" value="Non">Non !</label>
     </div>
+
+
+      <div class="question">
+          <h2>3/ Quels types de problèmes vous sont causés par l'alcool ?</h2>
+          <label><input type="checkbox" name="qualite_vie[]" value="Tout va bien"> Tout va bien !!! </label>
+          <label><input type="checkbox" name="qualite_vie[]" value="Restriction sociale"> Restriction de la vie sociale </label>
+          <label><input type="checkbox" name="qualite_vie[]" value="Souffrance psychologique"> Souffrance psychologique </label>
+          <label><input type="checkbox" name="qualite_vie[]" value="Fatigue"> Fatigue, épuisement </label>
+          <label><input type="checkbox" name="qualite_vie[]" value="Réstriction professionnelle"> Réduction de la vie professionnelle </label>
+          <label><input type="checkbox" name="qualite_vie[]" value="Coûts financiers"> Coûts financiers importants </label>
+          <label><input type="checkbox" name="qualite_vie[]" value="Impact négatif sur la fratrie"> Impact négatif sur la fratrie </label>
+          <label><input type="checkbox" name="qualite_vie[]" value="Conflics familiaux"> Conflics familiaux </label>
+          <label><input type="checkbox" name="qualite_vie[]" value="Maladie ou difficulté pour ..."> Difficulté pour réaliser des projets personnels </label>
+          <label><input type="checkbox" name="qualite_vie[]" value="Eloignement de la personne"> Isolement </label>
+      </div>
 
 
 
     <div class="question">
-      <h2>3/ Quel est votre activité ?</h2>
+      <h2>4/ Quel est votre activité scolaire ou professionelle ??</h2>
       <label><input type="radio" name="activite" value="Scolarité ordinaire"> Scolarité en milieu ordinaire </label>
       <label><input type="radio" name="activite" value="Dispositif spécialisé"> Scolarité en dispositif spécialisé de l'Education National </label>
       <label><input type="radio" name="activite" value="Instruction en Famille"> Instruction en Famille </label>
       <label><input type="radio" name="activite" value="Etablissement médico-social"> Scolarité dans un établissement médico-social (IME, IMPRO, ...) </label>
       <label><input type="radio" name="activite" value="Formation professionnelle"> Formation Professionnel </label>
       <label><input type="radio" name="activite" value="Etudes Supérieures"> Etudes Supérieures </label>
-      <label><input type="radio" name="activite" value="Activité Professionnel ordinaire"> Activité Professionnel en milieu ordinaire </label>
+      <label><input type="radio" name="activite" value="Activité Professionnel ordinaire"> Activité Professionnelle en milieu ordinaire </label>
       <label><input type="radio" name="activite" value="Milieu protégé"> Activité Professionnel en milieu protégé (ESAT, Entreprise adaptée) </label>
-      <label><input type="radio" name="activite" value="Sans activité"> Sans aucune activité scolaire ou professionnel </label>
+      <label><input type="radio" name="activite" value="Sans activité"> Sans aucune activité scolaire ou professionnelle </label>
       <label><input type="radio" name="activite" value="Autre"> Autre </label>
     </div>
 
 
 
-    <div class="question">
-      <h2>4/ Quel est votre qualité de vie ?</h2>
-      <label><input type="checkbox" name="qualite_vie[]" value="Tout va bien"> Tout va bien </label>
-      <label><input type="checkbox" name="qualite_vie[]" value="Restriction sociale"> Restriction de la vie sociale </label>
-      <label><input type="checkbox" name="qualite_vie[]" value="Souffrance psychologique"> Souffrance psychologique </label>
-      <label><input type="checkbox" name="qualite_vie[]" value="Fatigue"> Fatigue, épuisement </label>
-      <label><input type="checkbox" name="qualite_vie[]" value="Réstriction professionnelle"> Réduction de la vie professionnelle </label>
-      <label><input type="checkbox" name="qualite_vie[]" value="Coûts financiers"> Coûts financiers importants </label>
-      <label><input type="checkbox" name="qualite_vie[]" value="Impact négatif sur la fratrie"> Impact négatif sur la fratrie </label>
-      <label><input type="checkbox" name="qualite_vie[]" value="Conflics familiaux"> Conflics familiaux </label>
-      <label><input type="checkbox" name="qualite_vie[]" value="Maladie ou difficulté pour ..."> Maladie ou difficulté pour ... </label>
-      <label><input type="checkbox" name="qualite_vie[]" value="Eloignement de la personne"> Eloignement de la personne </label>
-    </div>
-
-
 
     <div class="question">
       <h2>5/ Avez-vous besoin de soutien ?</h2>
-      <label><input type="radio" name="soutien" value="Autonome"> Je suis totalement autonome</label>
+      <label><input type="radio" name="soutien" value="Autonome"> Je suis totalement autonome !</label>
       <label><input type="radio" name="soutien" value="Soutien partiel"> Un soutien à l'autonomie pour le logement, l'accès à la santé, les loisirs, les démarches administratives</label>
           <label><input type="radio" name="soutien" value="Aide totale"> Une aide pour tous les actes de la vie quotidienne et la précence d'une tierce personne 24 heures sur 24</label>
       <label><input type="radio" name="soutien" value="Intervention quotidienne"> Des interventions et stimulations ponctuelles mais quotidiennes (toilette, sorties, repas, communication..)</label>
