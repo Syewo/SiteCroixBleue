@@ -1,24 +1,27 @@
 body .container-questions {
     font-family: Arial, sans-serif;
-    max-width: 600px;
-    margin: auto;
+    max-width: 700px;
     background: #fff;
+    margin: auto;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 7%;
+    margin-top: 7%;
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #ff0000;
 }
 
 .question {
     margin-bottom: 20px;
+    margin-top: 10%;
 }
 
 .question h2 {
     font-size: 18px;
-    color: #555;
+    color: #ff5900;
 }
 
 .question label {
@@ -50,4 +53,28 @@ h1 {
 }
 .container-questions .btn:hover{
     opacity: 0.82;
+}
+
+#boutonsubmit{
+    background-color: white;
+    border: 2px solid #0000FF;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+}
+
+#boutonsubmit:hover{
+    background-color: #0000FF;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.sousquestion h2{
+    margin-top: 3%;
+    margin-left: 10%;
+    color: #ffae00;
+}
+
+.sousquestionbtn{
+    margin-left: 10%;
 }

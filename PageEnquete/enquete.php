@@ -66,12 +66,12 @@
       <h2>2/Buvez-vous régulièriement de l'alcool ?</h2>
       <label><input type="radio" name="handicap" value="Oui">Oui</label>
       <label><input type="radio" name="handicap" value="Non">Non</label>
-      <div><h2>2/a Si oui essayez vous activement d'arreter de boire ?</h2></div>
-      <label><input type="radio" name="cdaph" value="Oui">Oui</label>
-      <label><input type="radio" name="cdaph" value="Non">Non !!</label>
-      <div><h2>2/b L'alcoolisme a-il des conséquences sur votre quotidien ?</h2></div>
-      <label><input type="radio" name="lieu_vie" value="Oui">Oui</label>
-      <label><input type="radio" name="lieu_vie" value="Non">Non !</label>
+      <div class="sousquestion"><h2>2/a Si oui essayez vous activement d'arreter de boire ?</h2></div>
+      <label><input type="radio" name="cdaph" value="Oui" class="sousquestionbtn">Oui</label>
+      <label><input type="radio" name="cdaph" value="Non" class="sousquestionbtn">Non !!</label>
+      <div class="sousquestion"><h2>2/b L'alcoolisme a-il des conséquences sur votre quotidien ?</h2></div>
+      <label><input type="radio" name="lieu_vie" value="Oui" class="sousquestionbtn">Oui</label>
+      <label><input type="radio" name="lieu_vie" value="Non" class="sousquestionbtn">Non !</label>
     </div>
 
 
@@ -116,7 +116,7 @@
       <label><input type="radio" name="soutien" value="Intervention quotidienne"> Des interventions et stimulations ponctuelles mais quotidiennes (toilette, sorties, repas, communication..)</label>
     </div>
 
-    <button type="submit">Envoyer</button>
+    <button type="submit" id="boutonsubmit">Envoyer</button>
   </form>
 </div>
     <?php }

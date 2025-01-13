@@ -36,7 +36,7 @@ fetch('get_data.php')
 
         // Fonction pour créer un graphique en barres avec D3.js
         function createBarChart(selector, data, title) {
-            const margin = { top: 40, right: 20, bottom: 100, left: 50 };
+            const margin = { top: 40, right: 20, bottom: 130, left: 50 };
             const width = 600 - margin.left - margin.right;
             const height = 400 - margin.top - margin.bottom;
 
@@ -170,8 +170,8 @@ fetch('get_data.php')
         // Création des graphiques
         createBarChart('#region', regions, 'Répartition par région');
         createPieChart('#lieuDeVie', lieuDeVie, 'Consommation d\'alcool');
-        createBarChart('#activite', activites, 'Conséquences de l\'alcool');
-        createBarChart('#qualiteVie', qualiteVie, 'Répartition par qualité de vie');
+        createBarChart('#activite', activites, 'Activités');
+        createBarChart('#qualiteVie', qualiteVie, 'Conséquences de l\'alcoolisme');
         createPieChart('#soutien', soutien, 'Répartition par soutien');
     })
     .catch(error => console.error('Erreur lors de la récupération des données :', error));
